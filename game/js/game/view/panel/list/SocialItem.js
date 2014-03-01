@@ -30,14 +30,14 @@ function SocialItem(id,iconName,name,bgName,x,y,userInfo){
     this.addEventListener(LMouseEvent.MOUSE_DOWN,function(){
         this.selectedBitmap.visible = true;
         this.bitmap.visible = false;
-        cakecake.downButtons.push(this);
+        frozen.downButtons.push(this);
     },this);
 //    this.addEventListener(LMouseEvent.MOUSE_UP,function(){
 //        this.selectedBitmap.visible = false;
 //        this.bitmap.visible = true;
-//        for(var i = 0;i<cakecake.downButtons.length;i++){
-//            if(cakecake.downButtons[i] == this){
-//                cakecake.downButtons.splice(i,1);
+//        for(var i = 0;i<frozen.downButtons.length;i++){
+//            if(frozen.downButtons[i] == this){
+//                frozen.downButtons.splice(i,1);
 //            }
 //        }
 //    },this);

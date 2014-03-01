@@ -32,25 +32,25 @@ function useUniversal(targetContainer,universalPlant,test){
     //左
     if(col>0){
         if(!gameTools.isEmpty(row,col-1)){
-            filterGrid(roundTeam,cakecake.gridElements[row][col-1]);
+            filterGrid(roundTeam,frozen.gridElements[row][col-1]);
         }
     }
     //右
     if(col<5){
         if(!gameTools.isEmpty(row,col+1)){
-            filterGrid(roundTeam,cakecake.gridElements[row][col+1]);
+            filterGrid(roundTeam,frozen.gridElements[row][col+1]);
         }
     }
     //上
     if(row>0){
         if(!gameTools.isEmpty(row-1,col)){
-            filterGrid(roundTeam,cakecake.gridElements[row-1][col]);
+            filterGrid(roundTeam,frozen.gridElements[row-1][col]);
         }
     }
     //下
     if(row<5){
         if(!gameTools.isEmpty(row+1,col)){
-            filterGrid(roundTeam,cakecake.gridElements[row+1][col]);
+            filterGrid(roundTeam,frozen.gridElements[row+1][col]);
         }
     }
 //分析左右上下4个cake的合成情况。
@@ -120,10 +120,10 @@ function useUniversal(targetContainer,universalPlant,test){
     if(!test){
 //        gameTools.removeTip();
         //检测
-        currentGridContainer = cakecake.gridElements[targetContainer.row][targetContainer.col];
+        currentGridContainer = frozen.gridElements[targetContainer.row][targetContainer.col];
         //记录前一个位置
-        cakecake.prePosition.row = currentGridContainer.row;
-        cakecake.prePosition.col = currentGridContainer.col;
+        frozen.prePosition.row = currentGridContainer.row;
+        frozen.prePosition.col = currentGridContainer.col;
         processPlant(currentGridContainer,new Plant(301));
     }
 

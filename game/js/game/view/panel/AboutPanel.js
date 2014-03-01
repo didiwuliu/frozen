@@ -23,7 +23,7 @@ AboutPanel.prototype.initContent = function(){
     var data1 = [
         "Cake&Cake  V1.0.0 ",
         {name:"s189"},
-        "support mail:support@wozlla.com"
+        "support mail:support@didiwuliu.com"
     ];
     var data2 = [
         {title:{name:"s191"},name:[{name:"s199"}]},

@@ -47,8 +47,8 @@ var LGlobal = function (){
                 event.preventDefault();
                 var _event = HP.refresh(event);
                 util.printObject(_event);
-                while(cakecake.downButtons.length){
-                    var btn = cakecake.downButtons.shift();
+                while(frozen.downButtons.length){
+                    var btn = frozen.downButtons.shift();
                     btn.selectedBitmap.visible = false;
                     btn.bitmap.visible = true;
                 }
@@ -81,8 +81,8 @@ var LGlobal = function (){
                 event.preventDefault();
                 var _event = HP.refresh(event);
                 util.printObject(_event);
-                while(cakecake.downButtons.length){
-                    var btn = cakecake.downButtons.shift();
+                while(frozen.downButtons.length){
+                    var btn = frozen.downButtons.shift();
                     btn.selectedBitmap.visible = false;
                     btn.bitmap.visible = true;
                 }

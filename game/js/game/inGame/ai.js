@@ -15,7 +15,7 @@ this.ai = this.ai || {};
         var tempTeam = [];
         //左
         if(col>0){
-            var grid1 = cakecake.gridElements[row][col-1];
+            var grid1 = frozen.gridElements[row][col-1];
             if(grid1.plant){
                 var b = (grid1.plant.level >=100 && grid1.plant.level <=107) || (grid1.plant.level >=200 && grid1.plant.level <=202) || grid1.plant.level ==301 || grid1.plant.level ==500;//(500,小钱币，300，蛋糕工具)
                 if(statisticsTeam.indexOf(grid1) < 0 && grid1.plant.level == targetPlant.level && b){
@@ -26,7 +26,7 @@ this.ai = this.ai || {};
         }
         //右
         if(col<5){
-            var grid2 = cakecake.gridElements[row][col+1];
+            var grid2 = frozen.gridElements[row][col+1];
             if(grid2.plant){
                 var b = (grid2.plant.level >=100 && grid2.plant.level <=107) || (grid2.plant.level >=200 && grid2.plant.level <=202) || grid2.plant.level ==301 || grid2.plant.level ==500;
                 if(statisticsTeam.indexOf(grid2) < 0 && grid2.plant.level == targetPlant.level && b){
@@ -37,7 +37,7 @@ this.ai = this.ai || {};
         }
         //上
         if(row>0){
-            var grid3 = cakecake.gridElements[row-1][col];
+            var grid3 = frozen.gridElements[row-1][col];
             if(grid3.plant){
                 var b = (grid3.plant.level >=100 && grid3.plant.level <=107) || (grid3.plant.level >=200 && grid3.plant.level <=202) || grid3.plant.level ==301 || grid3.plant.level ==500;
                 if(statisticsTeam.indexOf(grid3) < 0 && grid3.plant.level == targetPlant.level && b){
@@ -48,7 +48,7 @@ this.ai = this.ai || {};
         }
         //下
         if(row<5){
-            var grid4 = cakecake.gridElements[row+1][col];
+            var grid4 = frozen.gridElements[row+1][col];
             if(grid4.plant){
                 var b = (grid4.plant.level >=100 && grid4.plant.level <=107) || (grid4.plant.level >=200 && grid4.plant.level <=202) || grid4.plant.level ==301 || grid4.plant.level ==500;
                 if(statisticsTeam.indexOf(grid4) < 0 && grid4.plant.level == targetPlant.level && b){
@@ -85,7 +85,7 @@ this.ai = this.ai || {};
     }
 
     this.ai.doCheck = function (statisticsResultArr,currentGridContainer,currentPlant){
-        gameTools.removeTargetTweenArr(cakecake.targetTweens);
+        gameTools.removeTargetTweenArr(frozen.targetTweens);
         if(statisticsResultArr.length < 1){
             currentGridContainer.setPlant(currentPlant);
             var levelObject = gameConfig.gameObjects["level_"+currentPlant.level];
@@ -220,7 +220,7 @@ this.ai = this.ai || {};
 
     }
     this.ai.checkTest = function (statisticsResultArr){
-        gameTools.removeTargetTweenArr(cakecake.targetTweens);
+        gameTools.removeTargetTweenArr(frozen.targetTweens);
         for(var i = 0;i<statisticsResultArr.length;i++){
             var result = statisticsResultArr[i];
             for(var j=0;j<result.statisticsTeam.length;j++){
@@ -236,7 +236,7 @@ this.ai = this.ai || {};
                 var dx = (_tx-_ox)*a/_ds;var dy = (_ty-_oy)*a/_ds;
 
                 var targetTween = LGlobal.TweenLite.to(animationLayer,300,{x:dx+_ox, y:dy+_oy,yoyo:true});
-                cakecake.targetTweens.push({tween:targetTween,ref:result.statisticsTeam[j],ox:_ox,oy:_oy});
+                frozen.targetTweens.push({tween:targetTween,ref:result.statisticsTeam[j],ox:_ox,oy:_oy});
             }
         }
         gameTools.drawCombineTip(statisticsResultArr);
@@ -254,8 +254,8 @@ this.ai = this.ai || {};
                     return {row:gridContainer.row-1,col:gridContainer.col};
                 }
 
-                if(closeArr.indexOf(cakecake.gridElements[gridContainer.row-1][gridContainer.col]) < 0 && openArr.indexOf(cakecake.gridElements[gridContainer.row-1][gridContainer.col]) < 0){
-                    openArr.push(cakecake.gridElements[gridContainer.row-1][gridContainer.col]);
+                if(closeArr.indexOf(frozen.gridElements[gridContainer.row-1][gridContainer.col]) < 0 && openArr.indexOf(frozen.gridElements[gridContainer.row-1][gridContainer.col]) < 0){
+                    openArr.push(frozen.gridElements[gridContainer.row-1][gridContainer.col]);
                 }
 
             }
@@ -264,8 +264,8 @@ this.ai = this.ai || {};
                 if(gameTools.isEmpty(gridContainer.row+1,gridContainer.col)){
                     return {row:gridContainer.row+1,col:gridContainer.col};
                 }
-                if(closeArr.indexOf(cakecake.gridElements[gridContainer.row+1][gridContainer.col]) < 0 && openArr.indexOf(cakecake.gridElements[gridContainer.row+1][gridContainer.col]) < 0){
-                    openArr.push(cakecake.gridElements[gridContainer.row+1][gridContainer.col]);
+                if(closeArr.indexOf(frozen.gridElements[gridContainer.row+1][gridContainer.col]) < 0 && openArr.indexOf(frozen.gridElements[gridContainer.row+1][gridContainer.col]) < 0){
+                    openArr.push(frozen.gridElements[gridContainer.row+1][gridContainer.col]);
                 }
 
             }
@@ -274,8 +274,8 @@ this.ai = this.ai || {};
                 if(gameTools.isEmpty(gridContainer.row,gridContainer.col-1)){
                     return {row:gridContainer.row,col:gridContainer.col-1};
                 }
-                if(closeArr.indexOf(cakecake.gridElements[gridContainer.row][gridContainer.col-1]) < 0 && openArr.indexOf(cakecake.gridElements[gridContainer.row][gridContainer.col-1]) < 0){
-                    openArr.push(cakecake.gridElements[gridContainer.row][gridContainer.col-1]);
+                if(closeArr.indexOf(frozen.gridElements[gridContainer.row][gridContainer.col-1]) < 0 && openArr.indexOf(frozen.gridElements[gridContainer.row][gridContainer.col-1]) < 0){
+                    openArr.push(frozen.gridElements[gridContainer.row][gridContainer.col-1]);
                 }
             }
             //右
@@ -283,8 +283,8 @@ this.ai = this.ai || {};
                 if(gameTools.isEmpty(gridContainer.row,gridContainer.col+1)){
                     return {row:gridContainer.row,col:gridContainer.col+1};
                 }
-                if(closeArr.indexOf(cakecake.gridElements[gridContainer.row][gridContainer.col+1]) < 0 && openArr.indexOf(cakecake.gridElements[gridContainer.row][gridContainer.col+1]) < 0){
-                    openArr.push(cakecake.gridElements[gridContainer.row][gridContainer.col+1]);
+                if(closeArr.indexOf(frozen.gridElements[gridContainer.row][gridContainer.col+1]) < 0 && openArr.indexOf(frozen.gridElements[gridContainer.row][gridContainer.col+1]) < 0){
+                    openArr.push(frozen.gridElements[gridContainer.row][gridContainer.col+1]);
                 }
             }
         }

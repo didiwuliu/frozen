@@ -9,22 +9,22 @@ this.map = this.map || {};
 (function(){
     this.map.initGridContainer = function(){
         for(var i = 0; i < mapConfig.row; i++){
-            cakecake.gridElements[i] = [];
+            frozen.gridElements[i] = [];
         }
         for(var i = 0; i < mapConfig.row; i++){
             for(var j = 0; j < mapConfig.col; j++){
                 if(i == 0 && j == 0)continue;
                 var gridContainer = new GridContainer(i,j);
-                cakecake.gridElements[i][j] = gridContainer;
+                frozen.gridElements[i][j] = gridContainer;
             }
         }
         //因为盘子要放在最底层，所以要在最后初始化。因为addChild（obj，true）；
         var gridContainer = new GridContainer(0,0);
-        cakecake.gridElements[0][0] = gridContainer;
+        frozen.gridElements[0][0] = gridContainer;
     }
     this.map.initToolsGrids = function(){
 //(0,0)
-        var grid = cakecake.gridElements[0][0];
+        var grid = frozen.gridElements[0][0];
         var bpd = new LBitmapData(assetsData.effectAnimation.game_cake.image,assetsData.effectAnimation.game_cake.tool_container.rectsData[0]);
         var bp = new LBitmap(bpd);
         grid.animationLayer.addChild(bp);
@@ -44,9 +44,9 @@ this.map = this.map || {};
         animation.loop = true;
         animation.setfps(5);
 
-        cakecake.gridElements[5][5].toolAnimation = animation;
-        cakecake.gridElements[5][5].animationLayer.addChild(animation);
-        cakecake.gridElements[5][5].setBg(assetsData.gridBg.rectsData[0]);
+        frozen.gridElements[5][5].toolAnimation = animation;
+        frozen.gridElements[5][5].animationLayer.addChild(animation);
+        frozen.gridElements[5][5].setBg(assetsData.gridBg.rectsData[0]);
         var timer = new LTimer(10,function(animation){
             if(animation && animation.currentAnimationName == "wait"){
                 animation.stop = false;
@@ -98,7 +98,7 @@ this.map = this.map || {};
             var p = positonArr.shift();
             var row = parseInt(p / 6);
             var col = p % 6;
-            cakecake.gridElements[row][col].setPlant(new Plant(100,false),true);
+            frozen.gridElements[row][col].setPlant(new Plant(100,false),true);
             console.log("row,col: ",row,col);
         }
         //放置后面6个物品。
@@ -114,12 +114,12 @@ this.map = this.map || {};
                     var p = positonArr.shift();
                     var row = parseInt(p / 6);
                     var col = p % 6;
-                    cakecake.gridElements[row][col].setAnimal(new Animal(),true);
+                    frozen.gridElements[row][col].setAnimal(new Animal(),true);
                 }else{
                     var p = positonArr.shift();
                     var row = parseInt(p / 6);
                     var col = p % 6;
-                    cakecake.gridElements[row][col].setPlant(new Plant(levels[i],false),true);
+                    frozen.gridElements[row][col].setPlant(new Plant(levels[i],false),true);
                 }
             }
         }
@@ -149,7 +149,7 @@ this.map = this.map || {};
             for(var j = 0;j < 6;j++){
                 var value = gameConfig.practiceMap[i][j];
                 if(value){
-                    cakecake.gridElements[i][j].setPlant(new Plant(value),true);
+                    frozen.gridElements[i][j].setPlant(new Plant(value),true);
                 }
             }
         }
@@ -165,15 +165,15 @@ this.map = this.map || {};
         }
     }
     this.map.getNextPosition= function(){
-        if(!cakecake.prePosition.col && !cakecake.prePosition.row){
+        if(!frozen.prePosition.col && !frozen.prePosition.row){
             if(gameTools.isEmpty(3,2)){
                 return {row:3,col:2};
             }else{
-                cakecake.prePosition.col = 2;
-                cakecake.prePosition.row = 3;
+                frozen.prePosition.col = 2;
+                frozen.prePosition.row = 3;
             }
         }
-        openArr = [cakecake.gridElements[cakecake.prePosition.row][cakecake.prePosition.col]];
+        openArr = [frozen.gridElements[frozen.prePosition.row][frozen.prePosition.col]];
         closeArr = [];
         var position = ai.lookForPosition();
         return position;
@@ -188,7 +188,7 @@ this.map = this.map || {};
                 if((i == 0 && j == 0)||(i == 5 && j == 5)){
                     continue;
                 }
-                var gridContainer = cakecake.gridElements[i][j];
+                var gridContainer = frozen.gridElements[i][j];
                 gridContainer.plant = null;
                 gridContainer.animal = null;
                 gridContainer.animationLayer.removeAllChild();
@@ -206,10 +206,10 @@ this.map = this.map || {};
     }
     this.map.resetToolsGrid = function(){
         //(0,0)
-        var grid = cakecake.gridElements[0][0];
+        var grid = frozen.gridElements[0][0];
         grid.animationLayer.removeAllChild();
         //(5.5)删除物品
-        cakecake.gridElements[5][5].toolAnimation.setCurrentAnimation("wait");
+        frozen.gridElements[5][5].toolAnimation.setCurrentAnimation("wait");
     }
     this.map.initCanvasSize = function(){
         //1136,640
@@ -217,22 +217,22 @@ this.map = this.map || {};
         console.log("window.innerHeight:  "+window.innerHeight);
         var firstType = true;
         if(window.innerHeight>960){
-            cakecake.gameAnimationCanvas.width = 640;
-            cakecake.gameAnimationCanvas.height = 1136;
-//            cakecake.gameAnimationCanvas.width = cakecake.uiCanvas.width = 640;
-//            cakecake.gameAnimationCanvas.height = cakecake.uiCanvas.height = 1136;
-//            cakecake.bgCanvas.width = cakecake.bgCanvas2.width = cakecake.gameCanvas.width = cakecake.gameAnimationCanvas.width = cakecake.uiCanvas.width = 640;
-//            cakecake.bgCanvas.height = cakecake.bgCanvas2.height = cakecake.gameCanvas.height = cakecake.gameAnimationCanvas.height = cakecake.uiCanvas.height = 1136;
+            frozen.gameAnimationCanvas.width = 640;
+            frozen.gameAnimationCanvas.height = 1136;
+//            frozen.gameAnimationCanvas.width = frozen.uiCanvas.width = 640;
+//            frozen.gameAnimationCanvas.height = frozen.uiCanvas.height = 1136;
+//            frozen.bgCanvas.width = frozen.bgCanvas2.width = frozen.gameCanvas.width = frozen.gameAnimationCanvas.width = frozen.uiCanvas.width = 640;
+//            frozen.bgCanvas.height = frozen.bgCanvas2.height = frozen.gameCanvas.height = frozen.gameAnimationCanvas.height = frozen.uiCanvas.height = 1136;
             mapConfig.width = 640;
             mapConfig.height = 1136;
         }else{
             firstType = false;
-//            cakecake.bgCanvas.width = cakecake.bgCanvas2.width = cakecake.gameCanvas.width = cakecake.gameAnimationCanvas.width = cakecake.uiCanvas.width = 640;
-//            cakecake.bgCanvas.height = cakecake.bgCanvas2.height = cakecake.gameCanvas.height= cakecake.gameAnimationCanvas.height  = cakecake.uiCanvas.height = 960;
-//            cakecake.gameAnimationCanvas.width = cakecake.uiCanvas.width = 640;
-//            cakecake.gameAnimationCanvas.height  = cakecake.uiCanvas.height = 960;
-            cakecake.gameAnimationCanvas.width = 640;
-            cakecake.gameAnimationCanvas.height = 960;
+//            frozen.bgCanvas.width = frozen.bgCanvas2.width = frozen.gameCanvas.width = frozen.gameAnimationCanvas.width = frozen.uiCanvas.width = 640;
+//            frozen.bgCanvas.height = frozen.bgCanvas2.height = frozen.gameCanvas.height= frozen.gameAnimationCanvas.height  = frozen.uiCanvas.height = 960;
+//            frozen.gameAnimationCanvas.width = frozen.uiCanvas.width = 640;
+//            frozen.gameAnimationCanvas.height  = frozen.uiCanvas.height = 960;
+            frozen.gameAnimationCanvas.width = 640;
+            frozen.gameAnimationCanvas.height = 960;
             mapConfig.width = 640;
             mapConfig.height = 960;
         }

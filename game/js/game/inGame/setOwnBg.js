@@ -99,7 +99,7 @@ function setOwnBg(row,col){
     //搜索目标
     for(var i=0;i<assetsData.gridBg.mapbgType.length;i++){
 //        if(rightIndex>0){
-//            cakecake.gridElements[row][col].setBg(assetsData.mapbgArr[rightIndex]);
+//            frozen.gridElements[row][col].setBg(assetsData.mapbgArr[rightIndex]);
 //            break;
 //        }
         if(rightIndex>0){break};
@@ -116,6 +116,6 @@ function setOwnBg(row,col){
     }
     //设置背景
     if(rightIndex>0){
-        cakecake.gridElements[row][col].setBg(assetsData.gridBg.rectsData[rightIndex]);
+        frozen.gridElements[row][col].setBg(assetsData.gridBg.rectsData[rightIndex]);
     }
 }

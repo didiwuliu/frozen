@@ -18,7 +18,7 @@ this.facebook = this.facebook || {};
         var fb = CocoonJS.Social.Facebook;
         //initialize the Facebook Service the same way as the Official JS SDK
         fb.init({
-            appId:"353693331430896",//cakecakeId：353693331430896；ludeiId：325944107441107
+            appId:"353693331430896",//frozenId：353693331430896；ludeiId：325944107441107
             channelUrl: "channel.html"
         });
         //you can use the FB extension with the official API or use it with CocoonJS SocialGaming API

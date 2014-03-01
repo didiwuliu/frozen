@@ -7,7 +7,7 @@
  */
 function onStorageCell(){
     soundManager.play("storage_switch");
-    var grid = cakecake.gridElements[0][0];
+    var grid = frozen.gridElements[0][0];
     var tempPrevious;
     var tempCurrent;
     var typePrevious;
@@ -75,7 +75,7 @@ function onStorageCell(){
         grid.animationLayer.addChild(plant.animation);
     }
 
-    gameTools.removeTargetTweenArr(cakecake.targetTweens);
+    gameTools.removeTargetTweenArr(frozen.targetTweens);
     gameTools.removeTip();
 
     //值互换，先清空所有值
@@ -99,7 +99,7 @@ function onStorageCell(){
         gameTools.goon(4);
         return;
     }
-    //设置cakecake.tipContainer的显示
+    //设置frozen.tipContainer的显示
     if(typePrevious == "plant"){
         gameTools.drawTip(inventory.currentPlant,p);
     }else if(typePrevious == "animal"){

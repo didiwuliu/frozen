@@ -36,14 +36,14 @@ function onTouchEnd(event){
 function onMouseDown(event){
     if(!inventory.currentPlant && !inventory.currentAnimal && !inventory.currentGloves && !inventory.currentUniversal)
         return;
-    cakecake.isMouseDown = true;
+    frozen.isMouseDown = true;
     var p =  gameTools.getCurrentRowCol(event);
     if(!p)return;
     mouseHandler.onStart(p);
 }
 
 function onMouseMove(event){
-    if(!cakecake.isMouseDown){
+    if(!frozen.isMouseDown){
         return;
     }
     if(!inventory.currentPlant && !inventory.currentAnimal && !inventory.currentGloves && !inventory.currentUniversal)
@@ -60,7 +60,7 @@ function onMouseUp(event){
     if(!inventory.currentPlant && !inventory.currentAnimal && !inventory.currentGloves && !inventory.currentUniversal)
         return;
 //    console.log("mouseUP");
-    cakecake.isMouseDown = false;
+    frozen.isMouseDown = false;
     var p =  gameTools.getCurrentRowCol(event);
     if(!p)return;
     mouseHandler.onEnd(p);

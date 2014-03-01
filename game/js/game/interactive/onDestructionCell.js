@@ -29,17 +29,17 @@ function onDestructionCell(){
     gameUI.destructionCost.text = runtimeData.destructionCost;
     inventory.resetCurrent();
     gameTools.removeTip();
-    cakecake.gridElements[5][5].toolAnimation.stop = false;
-    cakecake.gridElements[5][5].toolAnimation.setCurrentAnimation("del");
-    cakecake.gridElements[5][5].toolAnimation.loop = false;
-    cakecake.gridElements[5][5].toolAnimation.playTime = 3;
-    cakecake.gridElements[5][5].toolAnimation.setComplete(function(){
+    frozen.gridElements[5][5].toolAnimation.stop = false;
+    frozen.gridElements[5][5].toolAnimation.setCurrentAnimation("del");
+    frozen.gridElements[5][5].toolAnimation.loop = false;
+    frozen.gridElements[5][5].toolAnimation.playTime = 3;
+    frozen.gridElements[5][5].toolAnimation.setComplete(function(){
         this.setCurrentAnimation("wait");
     });
 //    runtimeData.destructionRound = 0;
     if(runtimeData.currentMode == "mode5" && !tutorialManager.finished){
-        cakecake.tipContainer.y = 3*mapConfig.gridHeight+mapConfig.offsetTop;
-        cakecake.tipContainer.x = 4*mapConfig.gridWidth+mapConfig.offsetLeft;
+        frozen.tipContainer.y = 3*mapConfig.gridHeight+mapConfig.offsetTop;
+        frozen.tipContainer.x = 4*mapConfig.gridWidth+mapConfig.offsetLeft;
         gameTools.goon(3);
         return;
     }

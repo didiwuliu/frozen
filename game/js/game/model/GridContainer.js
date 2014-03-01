@@ -11,10 +11,10 @@ function GridContainer(row,col) {
     this.backDecorateLayer = new LSprite();
     this.animationLayer = new LSprite();
     this.decorateLayer = new LSprite();
-    cakecake.gameGridBg.addChild(this.backgroundLayer);
-    cakecake.animationLayer.addChild(this.animationLayer,true);
-    cakecake.animationLayer.addChild(this.backDecorateLayer,true);
-    cakecake.animationLayer.addChild(this.decorateLayer);
+    frozen.gameGridBg.addChild(this.backgroundLayer);
+    frozen.animationLayer.addChild(this.animationLayer,true);
+    frozen.animationLayer.addChild(this.backDecorateLayer,true);
+    frozen.animationLayer.addChild(this.decorateLayer);
     this.row = row;
     this.col = col;
     this.backgroundLayer.y = this.animationLayer.y = this.decorateLayer.y = this.y = this.row*mapConfig.gridHeight+mapConfig.offsetTop;
@@ -25,7 +25,7 @@ function GridContainer(row,col) {
         this.animal = null;
         this.plant = plant;
         this.animationLayer.addChild(plant.animation);
-        //cakecake.frontContext.drawImage(plant.data.image,plant.data.sourceRect.x,plant.data.sourceRect.y,mapConfig.gridWidth,mapConfig.gridHeight,this.x,this.y,mapConfig.gridWidth,mapConfig.gridHeight);
+        //frozen.frontContext.drawImage(plant.data.image,plant.data.sourceRect.x,plant.data.sourceRect.y,mapConfig.gridWidth,mapConfig.gridHeight,this.x,this.y,mapConfig.gridWidth,mapConfig.gridHeight);
         //设置背景
         this.setBg(assetsData.gridBg.rectsData[0]);
         this.setRoundGridsBg(this.row,this.col);
@@ -76,8 +76,8 @@ function GridContainer(row,col) {
         this.backDecorateLayer.addChild(animation);
     }
     this.setBg = function(bp){//bp,地图某格的起点坐标
-//        cakecake.bgContext2.clearRect(this.x,this.y-mapConfig.clipTop,mapConfig.gridWidth,mapConfig.gridHeight);
-//        cakecake.bgContext2.drawImage(assetsData.gridBg.image,bp.x,bp.y,mapConfig.gridWidth,mapConfig.gridHeight,this.x,this.y-mapConfig.clipTop,mapConfig.gridWidth,mapConfig.gridHeight);
+//        frozen.bgContext2.clearRect(this.x,this.y-mapConfig.clipTop,mapConfig.gridWidth,mapConfig.gridHeight);
+//        frozen.bgContext2.drawImage(assetsData.gridBg.image,bp.x,bp.y,mapConfig.gridWidth,mapConfig.gridHeight,this.x,this.y-mapConfig.clipTop,mapConfig.gridWidth,mapConfig.gridHeight);
 
         this.backgroundLayer.removeAllChild();
 

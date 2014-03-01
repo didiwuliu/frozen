@@ -45,7 +45,7 @@ window.HP = (function() {
 
 // 将程序中的 console.log("str"); 全部替换为 log("str");
 window.log = function(str) {
-	if (cakecake.isDebug) {
+	if (frozen.isDebug) {
 		console.log(str);
 	};
 }

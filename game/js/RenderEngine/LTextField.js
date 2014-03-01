@@ -129,7 +129,7 @@ LTextField.prototype = {
         var line = "";
         for(var n = 0; n < words.length; n++) {
             var testLine = line + words[n] + space;
-            var metrics = cakecake.gameAnimationContext.measureText(testLine);
+            var metrics = frozen.gameAnimationContext.measureText(testLine);
             var testWidth = metrics.width;
             //var testHeight = metrics.height;
             if(testWidth > maxWidth) {

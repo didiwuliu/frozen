@@ -21,7 +21,7 @@ this.gameTools = this.gameTools || {};
             for(var i = 0;i < mapConfig.row;i++){
                 for(var j = 0;j < mapConfig.row;j++){
                     if((i == 0 && j == 0) || (i == 5 && j == 5))continue;
-                    var grid = cakecake.gridElements[i][j];
+                    var grid = frozen.gridElements[i][j];
                     grid.animationLayer.x = grid.x;
                     grid.backDecorateLayer.x = grid.x;
                     grid.animationLayer.y = grid.y;
@@ -71,15 +71,15 @@ this.gameTools = this.gameTools || {};
             var r = Math.random();
             if(r <= pb.wheat/opb1){
 //            if(r <= 1/opb1){
-                cakecake.nextPlantLevel = 100;
+                frozen.nextPlantLevel = 100;
             }else if(r <= (pb.wheat+pb.wheatFlour)/opb1){
-                cakecake.nextPlantLevel = 101;
+                frozen.nextPlantLevel = 101;
             }else if(r<=(pb.wheat+pb.wheatFlour+pb.bread)/opb1){
-                cakecake.nextPlantLevel = 102;
+                frozen.nextPlantLevel = 102;
             }else{
-                cakecake.nextPlantLevel = 103;
+                frozen.nextPlantLevel = 103;
             }
-            inventory.forecastPlant = new Plant(cakecake.nextPlantLevel,false);
+            inventory.forecastPlant = new Plant(frozen.nextPlantLevel,false);
             gameTools.drawForecastTip(inventory.forecastPlant);
         }
         else if(type <= (opb1+pb.hamster)/100){//普通老鼠
@@ -153,7 +153,7 @@ this.gameTools = this.gameTools || {};
             inventory.forecastPlant = null;
             //检测
             var statisticsResultArr = [];
-            ai.analyseResult(cakecake.gridElements[p.row][p.col],inventory.currentPlant,statisticsResultArr);
+            ai.analyseResult(frozen.gridElements[p.row][p.col],inventory.currentPlant,statisticsResultArr);
             ai.checkTest(statisticsResultArr);
         }else if(inventory.forecastAnimal){
             inventory.currentAnimal = inventory.forecastAnimal;
@@ -242,8 +242,8 @@ this.gameTools = this.gameTools || {};
 
     }
     this.gameTools.drawForecastTip = function(cakeObject,coordinate){
-        cakecake.forecastTipContainer.removeAllChild();
-        cakecake.forecastTipContainer.addChild(cakeObject.animation);
+        frozen.forecastTipContainer.removeAllChild();
+        frozen.forecastTipContainer.addChild(cakeObject.animation);
         if(coordinate){
             cakeObject.animation.x = coordinate.x;
             //cakeObject.animation.y = coordinate.y;
@@ -252,9 +252,9 @@ this.gameTools = this.gameTools || {};
     this.gameTools.getRandomEmptyGrid = function(){
         if(runtimeData.currentMode == "mode5" && !tutorialManager.finished){
             if(gameTools.isEmpty(3,1)){
-                return cakecake.gridElements[3][1];
+                return frozen.gridElements[3][1];
             }else if(gameTools.isEmpty(3,0)){
-                return cakecake.gridElements[3][0];
+                return frozen.gridElements[3][0];
             }
 
         }
@@ -269,9 +269,9 @@ this.gameTools = this.gameTools || {};
                 if((j == 0 && a == 0)||(j == 5 && a == 5)){
                     continue;
                 }
-//                var grid = cakecake.gridElements[j][a];
+//                var grid = frozen.gridElements[j][a];
                 if(gameTools.isEmpty(j,a)){
-                    emptyGrids.push(cakecake.gridElements[j][a]);
+                    emptyGrids.push(frozen.gridElements[j][a]);
                 }
             }
         }
@@ -320,8 +320,8 @@ this.gameTools = this.gameTools || {};
         if((row == 0 && col == 0)||(row == 5 && col == 5)){
             return false;
         }
-        var plant = cakecake.gridElements[row][col].plant;
-        var animal = cakecake.gridElements[row][col].animal;
+        var plant = frozen.gridElements[row][col].plant;
+        var animal = frozen.gridElements[row][col].animal;
         if(plant || animal){
             return false;
         }else{
@@ -333,7 +333,7 @@ this.gameTools = this.gameTools || {};
         if((row == 0 && col == 0)||(row == 5 && col == 5)){
             return false;
         }
-        var plant = cakecake.gridElements[row][col].plant;
+        var plant = frozen.gridElements[row][col].plant;
         if(plant){
             return true;
         }else{
@@ -345,7 +345,7 @@ this.gameTools = this.gameTools || {};
         if((row == 0 && col == 0)||(row == 5 && col == 5)){
             return false;
         }
-        var animal = cakecake.gridElements[row][col].animal;
+        var animal = frozen.gridElements[row][col].animal;
         if(animal){
             return true;
         }else{
@@ -361,17 +361,17 @@ this.gameTools = this.gameTools || {};
     }
     this.gameTools.drawTip = function(plant,position){
         if(position){
-            cakecake.tipContainer.y = position.row*mapConfig.gridHeight+mapConfig.offsetTop;
-            cakecake.tipContainer.x = position.col*mapConfig.gridWidth+mapConfig.offsetLeft;
+            frozen.tipContainer.y = position.row*mapConfig.gridHeight+mapConfig.offsetTop;
+            frozen.tipContainer.x = position.col*mapConfig.gridWidth+mapConfig.offsetLeft;
         }
-        cakecake.tipContainer.addChild(plant.animation);
+        frozen.tipContainer.addChild(plant.animation);
         //左上角合成提示。
-//        cakecake.combineTipContainer.removeAllChild();
-//        cakecake.combineResultTipContainer.removeAllChild();
+//        frozen.combineTipContainer.removeAllChild();
+//        frozen.combineResultTipContainer.removeAllChild();
 //
 //        if((plant.level >= 100 && plant.level < 108) || (plant.level >= 200 && plant.level < 201 ) || (plant.level == 500)){
-//            cakecake.combineTipContainer.addChild((new Plant(plant.level)).animation);
-//            cakecake.combineResultTipContainer.addChild((new Plant(plant.level+1)).animation);
+//            frozen.combineTipContainer.addChild((new Plant(plant.level)).animation);
+//            frozen.combineResultTipContainer.addChild((new Plant(plant.level+1)).animation);
 //        }
     }
 
@@ -397,16 +397,16 @@ this.gameTools = this.gameTools || {};
 //        }
 //    }
     this.gameTools.removeTip = function(){
-       // gameTools.removeShakeTweenArr(cakecake.shakeTweens);
-        cakecake.tipContainer.removeAllChild();
+       // gameTools.removeShakeTweenArr(frozen.shakeTweens);
+        frozen.tipContainer.removeAllChild();
     }
     this.gameTools.removeStorageTip = function(){
-        // gameTools.removeShakeTweenArr(cakecake.shakeTweens);
-        cakecake.gridElements[0][0].animationLayer.removeChildAt(1);
+        // gameTools.removeShakeTweenArr(frozen.shakeTweens);
+        frozen.gridElements[0][0].animationLayer.removeChildAt(1);
     }
     this.gameTools.setTipPosition = function(p){
-        cakecake.tipContainer.x  = p.x;
-        cakecake.tipContainer.y  = p.y;
+        frozen.tipContainer.x  = p.x;
+        frozen.tipContainer.y  = p.y;
     }
     this.gameTools.resetInventory = function(){
         inventory.resetCurrent();

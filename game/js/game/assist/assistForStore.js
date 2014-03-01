@@ -13,7 +13,7 @@ this.assistForStore = this.assistForStore || {};
             //common cake
             inventory.resetCurrent();
             gameTools.removeTip();
-            gameTools.removeTargetTweenArr(cakecake.targetTweens);
+            gameTools.removeTargetTweenArr(frozen.targetTweens);
 
             inventory.currentPlant = new Plant(level);
             gameTools.drawTip(inventory.currentPlant,map.getNextPosition());
@@ -21,7 +21,7 @@ this.assistForStore = this.assistForStore || {};
             //Gloves
             inventory.resetCurrent();
             gameTools.removeTip();
-            gameTools.removeTargetTweenArr(cakecake.targetTweens);
+            gameTools.removeTargetTweenArr(frozen.targetTweens);
 
             inventory.currentGloves = new Plant(level);
             gameTools.drawTip(inventory.currentGloves);
@@ -29,7 +29,7 @@ this.assistForStore = this.assistForStore || {};
             //pastryTools
             inventory.resetCurrent();
             gameTools.removeTip();
-            gameTools.removeTargetTweenArr(cakecake.targetTweens);
+            gameTools.removeTargetTweenArr(frozen.targetTweens);
 //////////////////////////////
 //            inventory.currentAnimal = new Animal(true);
 //            gameTools.drawTip(inventory.currentAnimal,p);

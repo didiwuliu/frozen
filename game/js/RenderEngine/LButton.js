@@ -90,7 +90,7 @@ LButton.prototype.setSelected = function(selected){
 LButton.prototype.onDownEffect = function(event){
     this.selectedBitmap.visible = true;
     this.bitmap.visible = false;
-    cakecake.downButtons.push(this);
+    frozen.downButtons.push(this);
 }
 LButton.prototype.onSound = function(event){
     soundManager.play(this.sound?this.sound:"confirm_next");

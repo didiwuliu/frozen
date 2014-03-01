@@ -27,7 +27,7 @@ this.aiAnimal = this.aiAnimal || {};
         //左
         if(col>0){
             if(gameTools.isAnimal(row,col-1) || gameTools.isEmpty(row,col-1)){
-                var grid1 = cakecake.gridElements[row][col-1];
+                var grid1 = frozen.gridElements[row][col-1];
                 if(statisticsTeam.indexOf(grid1) < 0){
                     statisticsTeam.push(grid1);
                     tempTeam.push(grid1);
@@ -37,7 +37,7 @@ this.aiAnimal = this.aiAnimal || {};
         //右
         if(col<5){
             if(gameTools.isAnimal(row,col+1) || gameTools.isEmpty(row,col+1)){
-                var grid2 = cakecake.gridElements[row][col+1];
+                var grid2 = frozen.gridElements[row][col+1];
                 if(statisticsTeam.indexOf(grid2) < 0 ){
                     statisticsTeam.push(grid2);
                     tempTeam.push(grid2);
@@ -47,7 +47,7 @@ this.aiAnimal = this.aiAnimal || {};
         //上
         if(row>0){
             if(gameTools.isAnimal(row-1,col) || gameTools.isEmpty(row-1,col)){
-                var grid3 = cakecake.gridElements[row-1][col];
+                var grid3 = frozen.gridElements[row-1][col];
                 if(statisticsTeam.indexOf(grid3) < 0){
                     statisticsTeam.push(grid3);
                     tempTeam.push(grid3);
@@ -57,7 +57,7 @@ this.aiAnimal = this.aiAnimal || {};
         //下
         if(row<5){
             if(gameTools.isAnimal(row+1,col) || gameTools.isEmpty(row+1,col)){
-                var grid4 = cakecake.gridElements[row+1][col];
+                var grid4 = frozen.gridElements[row+1][col];
                 if(statisticsTeam.indexOf(grid4) < 0){
                     statisticsTeam.push(grid4);
                     tempTeam.push(grid4);
@@ -145,13 +145,13 @@ this.aiAnimal = this.aiAnimal || {};
         for(var i = 0;i<6;i++){
             for(var j = 0;j<6;j++){
                 if(i == 0 && j == 0){continue}else if(i == 5 && j == 5){continue};
-                var animal = cakecake.gridElements[i][j].animal;
+                var animal = frozen.gridElements[i][j].animal;
                 if(animal){
                     if(animal.superAnimal){
-                        superAnimals.push(cakecake.gridElements[i][j]);
+                        superAnimals.push(frozen.gridElements[i][j]);
                         continue;
                     }else{
-                        animals.push(cakecake.gridElements[i][j]);
+                        animals.push(frozen.gridElements[i][j]);
                     }
                 }
             }
@@ -174,7 +174,7 @@ this.aiAnimal = this.aiAnimal || {};
             fun:function(row,col,nextGrids){
                 if(col<5){
                     if(gameTools.isEmpty(row,col+1)){
-                        var grid = cakecake.gridElements[row][col+1];
+                        var grid = frozen.gridElements[row][col+1];
                         if(nextGrids.indexOf(grid)<0){
                             nextGrids.push(grid);
                             return grid;
@@ -189,7 +189,7 @@ this.aiAnimal = this.aiAnimal || {};
             fun:function(row,col,nextGrids){
                 if(col>0){
                     if(gameTools.isEmpty(row,col-1)){
-                        var grid = cakecake.gridElements[row][col-1];
+                        var grid = frozen.gridElements[row][col-1];
                         if(nextGrids.indexOf(grid)<0){
                             nextGrids.push(grid);
                             return grid;
@@ -204,7 +204,7 @@ this.aiAnimal = this.aiAnimal || {};
             fun:function(row,col,nextGrids){
                 if(row>0){
                     if(gameTools.isEmpty(row-1,col)){
-                        var grid = cakecake.gridElements[row-1][col];
+                        var grid = frozen.gridElements[row-1][col];
                         if(nextGrids.indexOf(grid)<0){
                             nextGrids.push(grid);
                             return grid;
@@ -219,7 +219,7 @@ this.aiAnimal = this.aiAnimal || {};
             fun:function(row,col,nextGrids){
                 if(row<5){
                     if(gameTools.isEmpty(row+1,col)){
-                        var grid = cakecake.gridElements[row+1][col];
+                        var grid = frozen.gridElements[row+1][col];
                         if(nextGrids.indexOf(grid)<0){
                             nextGrids.push(grid);
                             return grid;
@@ -367,7 +367,7 @@ this.aiAnimal = this.aiAnimal || {};
         var scops = [];
         //左
         if(col>0){
-            var grid1 = cakecake.gridElements[row][col-1];
+            var grid1 = frozen.gridElements[row][col-1];
             if(!aiAnimal.gridInScops(scops,grid1)){
                 if(!grid1.plant){
                     var gridsInScop = [];
@@ -378,7 +378,7 @@ this.aiAnimal = this.aiAnimal || {};
         }
         //右
         if(col<5){
-            var grid2 = cakecake.gridElements[row][col+1];
+            var grid2 = frozen.gridElements[row][col+1];
             if(!aiAnimal.gridInScops(scops,grid2)){
                 if(!grid2.plant){
                     var gridsInScop = [];
@@ -389,7 +389,7 @@ this.aiAnimal = this.aiAnimal || {};
         }
         //上
         if(row>0){
-            var grid3 = cakecake.gridElements[row-1][col];
+            var grid3 = frozen.gridElements[row-1][col];
             if(!aiAnimal.gridInScops(scops,grid3)){
                 if(!grid3.plant){
                     var gridsInScop = [];
@@ -400,7 +400,7 @@ this.aiAnimal = this.aiAnimal || {};
         }
         //下
         if(row<5){
-            var grid4 = cakecake.gridElements[row+1][col];
+            var grid4 = frozen.gridElements[row+1][col];
             if(!aiAnimal.gridInScops(scops,grid4)){
                 if(!grid4.plant){
                     var gridsInScop = [];

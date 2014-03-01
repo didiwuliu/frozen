@@ -129,7 +129,7 @@ this.tutorialManager = this.tutorialManager || {};
             }else if(tutorialItem.level == 300){
                 inventory.currentUniversal = new Plant(tutorialItem.level);
                 gameTools.drawTip(inventory.currentUniversal,tutorialItem.p);
-                cakecake.gridElements[0][0].animationLayer.removeChildAt(1);
+                frozen.gridElements[0][0].animationLayer.removeChildAt(1);
             }
             tutorialManager.dialogTip.visible = true;
             tutorialManager.dialogBox.visible = false;

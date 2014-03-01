@@ -28,35 +28,35 @@ this.gameUI = this.gameUI || {};
 
 //初始化显示列表结构
     this.gameUI.initBaseUI = function(){
-        cakecake.gameAnimationCanvas = document.getElementById("gameAnimation");//存储老鼠、蛋糕等动画，在LGlobal内初始化，cakecake.animationLayer
+        frozen.gameAnimationCanvas = document.getElementById("gameAnimation");//存储老鼠、蛋糕等动画，在LGlobal内初始化，frozen.animationLayer
         map.initCanvasSize();
 
-        cakecake.gameAnimationContext = cakecake.gameAnimationCanvas.getContext("2d");
+        frozen.gameAnimationContext = frozen.gameAnimationCanvas.getContext("2d");
 
         LGlobal.initialize(40);
         //游戏阶段背景、地格背景
-        cakecake.mapBgLayer = new LSprite();
-        cakecake.mapBgLayer.y = -mapConfig.clipTop;
-        cakecake.mapBgLayer.isMouseEnable = false;
+        frozen.mapBgLayer = new LSprite();
+        frozen.mapBgLayer.y = -mapConfig.clipTop;
+        frozen.mapBgLayer.isMouseEnable = false;
 
-        cakecake.gamePhaseBg = new LSprite();
-        cakecake.mapBgLayer.addChild(cakecake.gamePhaseBg);
-        cakecake.gamePhaseBg.isMouseEnable = false;
-        cakecake.gameGridBg = new LSprite();
-        cakecake.mapBgLayer.addChild(cakecake.gameGridBg);
-        cakecake.gameGridBg.isMouseEnable = false;
+        frozen.gamePhaseBg = new LSprite();
+        frozen.mapBgLayer.addChild(frozen.gamePhaseBg);
+        frozen.gamePhaseBg.isMouseEnable = false;
+        frozen.gameGridBg = new LSprite();
+        frozen.mapBgLayer.addChild(frozen.gameGridBg);
+        frozen.gameGridBg.isMouseEnable = false;
 
 
         //老鼠、蛋糕 ，动画层
-        cakecake.animationLayer = new LSprite();
-        cakecake.animationLayer.y = -mapConfig.clipTop;
-        cakecake.animationLayer.isMouseEnable = false;
+        frozen.animationLayer = new LSprite();
+        frozen.animationLayer.y = -mapConfig.clipTop;
+        frozen.animationLayer.isMouseEnable = false;
 
         var animationGlobal = new LGlobal();
         animationGlobal.setCanvas("gameAnimation",true);
         LGlobal.globals["animation"] = animationGlobal;
-        LGlobal.globals["animation"].addChild(cakecake.mapBgLayer);
-        LGlobal.globals["animation"].addChild(cakecake.animationLayer);
+        LGlobal.globals["animation"].addChild(frozen.mapBgLayer);
+        LGlobal.globals["animation"].addChild(frozen.animationLayer);
         //ui
         LGlobal.globals["animation"].addChild(gameUI.uiLayer);
         gameUI.uiLayer.y = -mapConfig.clipTop;
@@ -80,7 +80,7 @@ this.gameUI = this.gameUI || {};
         var bpd = new LBitmapData(assetsData.game.image,assetsData.game.game_bg_smaller);
         var bp = new LBitmap(bpd);
         bp.scaleX = bp.scaleY = 2;
-        cakecake.mapBgLayer.addChild(bp,true);
+        frozen.mapBgLayer.addChild(bp,true);
         //商店组件
         gameUI.shop = new ShopButton();
         gameUI.shop.x = 402;
@@ -105,9 +105,9 @@ this.gameUI = this.gameUI || {};
 //        gameUI.componentLayer.addChild(gameUI.goalBar);
         // NEXT 文本
         var bpd = new LBitmapData(assetsData.text.image,assetsData.text.next_f);
-        cakecake.nextBp = new LBitmap(bpd,"next_f");
-        cakecake.nextBp.setCP(83,188);
-        cakecake.animationLayer.addChild(cakecake.nextBp);
+        frozen.nextBp = new LBitmap(bpd,"next_f");
+        frozen.nextBp.setCP(83,188);
+        frozen.animationLayer.addChild(frozen.nextBp);
         //游戏目标框文本
         gameUI.targetText = new LTextField();
         gameUI.targetText.text = "game target";
@@ -219,32 +219,32 @@ this.gameUI = this.gameUI || {};
     }
 //蛋糕提示框
     this.gameUI.initTipContainer = function(){
-        cakecake.tipContainer = new LSprite();
-        cakecake.tipContainer.centerX = 54;
-        cakecake.tipContainer.centerY = 50;
-        cakecake.animationLayer.addChild(cakecake.tipContainer);
-        LGlobal.TweenLite.to(cakecake.tipContainer,500,{scaleX:1.4,scaleY:1.4,yoyo:true});
+        frozen.tipContainer = new LSprite();
+        frozen.tipContainer.centerX = 54;
+        frozen.tipContainer.centerY = 50;
+        frozen.animationLayer.addChild(frozen.tipContainer);
+        LGlobal.TweenLite.to(frozen.tipContainer,500,{scaleX:1.4,scaleY:1.4,yoyo:true});
 
-        cakecake.forecastTipContainer = new LSprite();
-        cakecake.forecastTipContainer.x = 38;
-        cakecake.forecastTipContainer.y = 208;
-        cakecake.animationLayer.addChild(cakecake.forecastTipContainer);
+        frozen.forecastTipContainer = new LSprite();
+        frozen.forecastTipContainer.x = 38;
+        frozen.forecastTipContainer.y = 208;
+        frozen.animationLayer.addChild(frozen.forecastTipContainer);
 
-        cakecake.combineTipContainer = new LSprite();
-        cakecake.combineTipContainer.scaleX = cakecake.combineTipContainer.scaleY = 0.65;
-        cakecake.combineTipContainer.centerX = 54;
-        cakecake.combineTipContainer.centerY = 50;
-        cakecake.combineTipContainer.x = 30;
-        cakecake.combineTipContainer.y = 292;
-        cakecake.animationLayer.addChild(cakecake.combineTipContainer);
+        frozen.combineTipContainer = new LSprite();
+        frozen.combineTipContainer.scaleX = frozen.combineTipContainer.scaleY = 0.65;
+        frozen.combineTipContainer.centerX = 54;
+        frozen.combineTipContainer.centerY = 50;
+        frozen.combineTipContainer.x = 30;
+        frozen.combineTipContainer.y = 292;
+        frozen.animationLayer.addChild(frozen.combineTipContainer);
 
-        cakecake.combineResultTipContainer = new LSprite();
-        cakecake.combineResultTipContainer.scaleX = cakecake.combineResultTipContainer.scaleY = 0.65;
-        cakecake.combineResultTipContainer.centerX = 54;
-        cakecake.combineResultTipContainer.centerY = 50;
-        cakecake.combineResultTipContainer.x = 130;
-        cakecake.combineResultTipContainer.y = 292;
-        cakecake.animationLayer.addChild(cakecake.combineResultTipContainer);
+        frozen.combineResultTipContainer = new LSprite();
+        frozen.combineResultTipContainer.scaleX = frozen.combineResultTipContainer.scaleY = 0.65;
+        frozen.combineResultTipContainer.centerX = 54;
+        frozen.combineResultTipContainer.centerY = 50;
+        frozen.combineResultTipContainer.x = 130;
+        frozen.combineResultTipContainer.y = 292;
+        frozen.animationLayer.addChild(frozen.combineResultTipContainer);
     }
 
 //顶部星星，淡入淡出
@@ -560,15 +560,15 @@ this.gameUI = this.gameUI || {};
         gameUI.timeLine.reset();
         gameUI.destroyGameUI();
         //inittipContainer
-        cakecake.tipContainer.removeAllChild();
+        frozen.tipContainer.removeAllChild();
 
-        cakecake.forecastTipContainer.removeAllChild();
-        cakecake.animationLayer.removeChild(cakecake.nextBp);
-        cakecake.nextBp = null;
+        frozen.forecastTipContainer.removeAllChild();
+        frozen.animationLayer.removeChild(frozen.nextBp);
+        frozen.nextBp = null;
 
-        cakecake.combineTipContainer.removeAllChild();
-        cakecake.combineResultTipContainer.removeAllChild();
-        cakecake.gamePhaseBg.removeAllChild();
+        frozen.combineTipContainer.removeAllChild();
+        frozen.combineResultTipContainer.removeAllChild();
+        frozen.gamePhaseBg.removeAllChild();
     }
 }())
 

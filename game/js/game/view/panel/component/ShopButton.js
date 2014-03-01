@@ -53,7 +53,7 @@ ShopButton.prototype.onDown = function(event){
     event.stopGoOn = true;
     this.bitmap.visible = false;
     this.selectedBitmap.visible = true;
-    cakecake.downButtons.push(this);
+    frozen.downButtons.push(this);
 }
 ShopButton.prototype.destroy = function(){
     this.removeEventListener(LMouseEvent.MOUSE_UP,this.onShop);

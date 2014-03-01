@@ -16,7 +16,7 @@ this.mouseHandler = this.mouseHandler || {};
 
 
     this.mouseHandler.onStart = function(p){
-        gameTools.removeTargetTweenArr(cakecake.targetTweens);
+        gameTools.removeTargetTweenArr(frozen.targetTweens);
         //destruction cell  and  storage cell
         if(p.row == 5 && p.col == 5){
             gameTools.setTipPosition(p);
@@ -31,15 +31,15 @@ this.mouseHandler = this.mouseHandler || {};
             return;
         }
         gameTools.setTipPosition(p);
-        cakecake.currentGridContainer = cakecake.gridElements[p.row][p.col];
+        frozen.currentGridContainer = frozen.gridElements[p.row][p.col];
         //检测,如果是动物（障碍物），则不检测
         if(inventory.currentPlant){
             console.log(inventory.currentPlant);
             var statisticsResultArr = [];
-            ai.analyseResult(cakecake.currentGridContainer,inventory.currentPlant,statisticsResultArr);
+            ai.analyseResult(frozen.currentGridContainer,inventory.currentPlant,statisticsResultArr);
             ai.checkTest(statisticsResultArr);
         }else if(inventory.currentUniversal){
-            useUniversal(cakecake.currentGridContainer,inventory.currentUniversal,true);
+            useUniversal(frozen.currentGridContainer,inventory.currentUniversal,true);
         }
     }
     this.mouseHandler.onMove = function(p){
@@ -55,24 +55,24 @@ this.mouseHandler = this.mouseHandler || {};
         }
 
         if((! gameTools.isEmpty(p.row, p.col))&&(!inventory.currentGloves)){
-            gameTools.removeTargetTweenArr(cakecake.targetTweens);
+            gameTools.removeTargetTweenArr(frozen.targetTweens);
             return;
         }
-        if(!cakecake.currentGridContainer || (cakecake.currentGridContainer.col == p.col && cakecake.currentGridContainer.row == p.row)){
+        if(!frozen.currentGridContainer || (frozen.currentGridContainer.col == p.col && frozen.currentGridContainer.row == p.row)){
             return;
         }
         //修改提示框位置
         //修改currentPlant属性
-        cakecake.currentGridContainer = cakecake.gridElements[p.row][p.col];
-        cakecake.tipContainer.x = p.x;
-        cakecake.tipContainer.y = p.y;
+        frozen.currentGridContainer = frozen.gridElements[p.row][p.col];
+        frozen.tipContainer.x = p.x;
+        frozen.tipContainer.y = p.y;
         //检测
         if(inventory.currentPlant){
             var statisticsResultArr = [];
-            ai.analyseResult(cakecake.currentGridContainer,inventory.currentPlant,statisticsResultArr);
+            ai.analyseResult(frozen.currentGridContainer,inventory.currentPlant,statisticsResultArr);
             ai.checkTest(statisticsResultArr);
         }else if(inventory.currentUniversal){
-            useUniversal(cakecake.currentGridContainer,inventory.currentUniversal,true);
+            useUniversal(frozen.currentGridContainer,inventory.currentUniversal,true);
         }
     }
     this.mouseHandler.onEnd = function(p){
@@ -91,16 +91,16 @@ this.mouseHandler = this.mouseHandler || {};
                 return;
             }
             //检测
-            cakecake.currentGridContainer = cakecake.gridElements[p.row][p.col];
+            frozen.currentGridContainer = frozen.gridElements[p.row][p.col];
             //记录前一个位置
-            cakecake.prePosition.row = cakecake.currentGridContainer.row;
-            cakecake.prePosition.col = cakecake.currentGridContainer.col;
-            processGloves(cakecake.currentGridContainer,inventory.currentGloves);
+            frozen.prePosition.row = frozen.currentGridContainer.row;
+            frozen.prePosition.col = frozen.currentGridContainer.col;
+            processGloves(frozen.currentGridContainer,inventory.currentGloves);
             inventory.currentGloves = null;
             return;
         }
         //收金币
-        var plant = cakecake.gridElements[p.row][p.col].plant;
+        var plant = frozen.gridElements[p.row][p.col].plant;
         if(plant && (plant.level == 500 || plant.level == 501)){
             onCoins(plant,p);
             return;
@@ -110,33 +110,33 @@ this.mouseHandler = this.mouseHandler || {};
                 return;
             }
             soundManager.play("Place_object");
-            cakecake.currentGridContainer = cakecake.gridElements[p.row][p.col];
-            useUniversal(cakecake.currentGridContainer,inventory.currentUniversal);
+            frozen.currentGridContainer = frozen.gridElements[p.row][p.col];
+            useUniversal(frozen.currentGridContainer,inventory.currentUniversal);
             inventory.currentUniversal = null;
         }else{
             if(!gameTools.isEmpty(p.row, p.col)){
                 return;
             }
             //检测
-            cakecake.currentGridContainer = cakecake.gridElements[p.row][p.col];
+            frozen.currentGridContainer = frozen.gridElements[p.row][p.col];
             //记录前一个位置
-            cakecake.prePosition.row = cakecake.currentGridContainer.row;
-            cakecake.prePosition.col = cakecake.currentGridContainer.col;
+            frozen.prePosition.row = frozen.currentGridContainer.row;
+            frozen.prePosition.col = frozen.currentGridContainer.col;
             if(inventory.currentPlant){
                 soundManager.play("Place_object");
 //                console.log("level   :  "+inventory.currentPlant.level);
-                processPlant(cakecake.currentGridContainer,inventory.currentPlant);
+                processPlant(frozen.currentGridContainer,inventory.currentPlant);
                 inventory.currentPlant = null;
             }else if(inventory.currentAnimal){
                 soundManager.play("Place_object");
-                processAnimal(cakecake.currentGridContainer,inventory.currentAnimal);
+                processAnimal(frozen.currentGridContainer,inventory.currentAnimal);
                 inventory.currentAnimal = null;
             }
         }
 //        runtimeData.destructionRound++;
 //        if(runtimeData.destructionRound >= 6){
-//            cakecake.gridElements[5][5].toolAnimation.setCurrentAnimation("wait");
-//            cakecake.gridElements[5][5].toolAnimation.stop = false;
+//            frozen.gridElements[5][5].toolAnimation.setCurrentAnimation("wait");
+//            frozen.gridElements[5][5].toolAnimation.stop = false;
 //        }
     }
 

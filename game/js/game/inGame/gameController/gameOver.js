@@ -63,7 +63,7 @@ this.runtimeData.gameOver = function(){
         var score = userInfo.gameResultLog[runtimeData.currentMode].length>1?userInfo.gameResultLog[runtimeData.currentMode][0].score:0;
         if(runtimeData.score > score){
             var mode = "M"+runtimeData.currentMode.slice(1);
-            var leaderBoardId = mode+"_LeaderBoard.cakeandcake.wozlla.com";
+            var leaderBoardId = mode+"_LeaderBoard.frozencity.didiwuliu.com";
 
 //                gamecenter.submitScore(runtimeData.score,null,{leaderboardID:leaderBoardId});
         }

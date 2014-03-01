@@ -28,7 +28,7 @@ function processGloves(currentGridContainer,currentGloves){
         gameTools.drawTip(plant);
         //runtimeData.trapedHamster += 1;
         runtimeData.trappedHamsterCount(1);
-        processPlant(cakecake.currentGridContainer,plant);
+        processPlant(frozen.currentGridContainer,plant);
 
     }else{
         if(currentGridContainer.plant.level){

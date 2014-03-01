@@ -13,7 +13,7 @@ this.runtimeData.cakeAnimationStart = function(){
                 for(var j = 0; j < mapConfig.col; j++){
                     var probability = Math.random();
                     if(probability > 0.4)continue;
-                    var gridContainer = cakecake.gridElements[i][j];
+                    var gridContainer = frozen.gridElements[i][j];
                     if(gridContainer.animal){
                         if(gridContainer.animal.superAnimal){
                             var animation = gridContainer.animal.animation;

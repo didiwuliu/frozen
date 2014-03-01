@@ -103,10 +103,10 @@ DailyRewardPanel.prototype.onShare = function(){
     var message = string.currentString[gameConfig.stringOfShare.FB_DR_body_01.name];
     var linkCaption = "cake & cake";
     var index = userInfo.login.successiveLoginTime-1;
-//    var url = "http://zhangchunsheng.github.io/cakeandcake/images/dailyreward/daily_reward_5.png";
-    var url = "http://zhangchunsheng.github.io/cakeandcake/images/dailyreward/daily_reward_"+index+".png";
+//    var url = "http://zhangchunsheng.github.io/frozencity/images/dailyreward/daily_reward_5.png";
+    var url = "http://zhangchunsheng.github.io/frozencity/images/dailyreward/daily_reward_"+index+".png";
     var mediaURL = url;
-    var linkURL = "http://www.wozlla.com/";
+    var linkURL = "http://www.didiwuliu.com/";
     var linkText = string.currentString[gameConfig.stringOfShare.FB_DR_title_01.name];
 
     var coins = gameConfig.dailyReward[userInfo.login.successiveLoginTime-1];

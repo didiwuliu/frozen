@@ -18,7 +18,7 @@ function onCoins(plant,p){
     animation.setfps(3);
     animation.x = -76;animation.y = -103;
     animation.playOnce();
-    var grid = cakecake.gridElements[p.row][p.col];
+    var grid = frozen.gridElements[p.row][p.col];
     animation.setComplete(function(){
         grid.decorateLayer.removeAllChild();
         grid.clearGrid();

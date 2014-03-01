@@ -1,4 +1,4 @@
-var cakecake = {
+var frozen = {
     isDebug: true,
     gridElements:[],
 
