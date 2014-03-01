@@ -73,6 +73,8 @@ function main(){
     gameUI.initMenuUI();
     gameUI.initTipContainer();
 
+    assetsData.loadGameAssets("mode1");
+    return;
     //dailyRewardPanel
     if(userInfo.login.firstToday && userInfo.login.successiveLoginTime >=2){
 //    if(true){

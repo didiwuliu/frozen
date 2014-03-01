@@ -214,6 +214,7 @@ this.gameUI = this.gameUI || {};
 //loadingUI
     this.gameUI.initLoadingUI = function(){
         gameUI.loadingPanle = new LoadingPanel();
+        gameUI.loadingPanle.visible = false;
         gameUI.panelLayer.addChild(gameUI.loadingPanle );
     }
 //蛋糕提示框
