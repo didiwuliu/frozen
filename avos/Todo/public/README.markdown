@@ -1,0 +1,1 @@
+## demo for avos cloud app using javascript sdk
