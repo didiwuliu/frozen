@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+
+<dict>
+<key>tips</key>
+<array>
+<string>欢迎来到三里屯！</string>
+
+<string>您好，镇长！今天也是美好的一天！</string>
+<string>提示：合成光之塔需要4个金字塔哦！4个！</string>
+<string>提示：为巨猫规划圈养区域将有利于发展。</string>
+<string>提示：商店中的小草更多的作用可能是垫步。</string>
+<string>提示：宝箱不要着急点开，可以合成大宝箱。</string>
+<string>提示：猫也可以放入仓库中，适时再放出来。</string>
+<string>提示：飞天猫多时，可尝试置于死地而后生。</string>
+<string>小镇居民表达了对您的膜拜。</string>
+<string>提示：尽量不要达成5个以上的合成，亏！</string>
+<string>提示：如果可能，将多个猫分成3只一组。</string>
+<string>提示：步数1分钟回复一步。</string>
+<string>提示：三个物品以上的合成有双倍分数哦！</string>
+<string>你问三里屯是啥？反正那有苹果旗舰店！</string>
+<string>提示：石头并不是毫无用处哦！</string>
+<string>提示：用炸弹炸下大山试试？</string>
+<string>提示：5个以上的合成也只有双倍分数哦！</string>
+<string>提示：尝试将物品3个或4个一组进行合成。</string>
+</array>
+
+</dict>
+
+</plist>

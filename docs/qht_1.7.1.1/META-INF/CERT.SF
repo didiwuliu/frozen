@@ -1,0 +1,595 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android)
+SHA1-Digest-Manifest: iNOm+BhnnUogkG6wRd/hb3CyzhI=
+
+Name: assets/objectd.plist
+SHA1-Digest: C7/IVHILLc9jq+o2zlpe3vAPyAA=
+
+Name: res/drawable-hdpi/weibosdk_bg_delwords_sel.png
+SHA1-Digest: pmiF+4+MQDSw0h/bj7KwJ4E7x/o=
+
+Name: assets/se_dropboom.ogg
+SHA1-Digest: SGZWo0c4iyJHfgEOdsYe5Bgpwy4=
+
+Name: assets/GameScene_godness.png
+SHA1-Digest: hXJebfp0G7WzhQZG5zySl34ekNM=
+
+Name: res/drawable-xhdpi/title_logo.png
+SHA1-Digest: 7obk0jQvoq41ekFdSq8/Xl596YQ=
+
+Name: assets/GameScene_rolling.plist
+SHA1-Digest: nR0JlG3pvm4h3a5kzw9/S4ezy3E=
+
+Name: com/flurry/org/codehaus/jackson/map/VERSION.txt
+SHA1-Digest: IeuIUsVUoaxJTzoIhC3+n/S217A=
+
+Name: assets/se_charatalk1.ogg
+SHA1-Digest: z0cpb5hwP6OM0IUyIXZIItcIG0Q=
+
+Name: assets/button_exchange_new.png
+SHA1-Digest: UYH8+pd0VlceiiICZT4hzfv5Lyk=
+
+Name: res/drawable-xhdpi/bg_btn.png
+SHA1-Digest: ZkoIBOSM5tyiSaa7YeKY14tpMG4=
+
+Name: assets/tilea.png
+SHA1-Digest: a9cc/dOG9IzTDnJ2IDhgtNyfENE=
+
+Name: res/drawable-hdpi/bg_delwords_nor.png
+SHA1-Digest: Typ0lSE2dbXalUA72OFx6cYO92Q=
+
+Name: assets/cscene.png
+SHA1-Digest: 29vmA5XXityLtevAMqji4bXzuM4=
+
+Name: res/drawable-xhdpi/weibosdk_bg_delwords_nor.png
+SHA1-Digest: erqx22k4oZMITD4LvGNYCWx87Qg=
+
+Name: assets/act_text1.png
+SHA1-Digest: dgsVXd1gg6l4U9XEsOAtUuq7St4=
+
+Name: assets/Layout.plist
+SHA1-Digest: 6bAyl6cLZf6Zup7n+4mxAShNfEo=
+
+Name: assets/Layout.png
+SHA1-Digest: 6p9zyfnkJYhinzIUGkg6CfdWV7Y=
+
+Name: res/drawable-hdpi/weibosdk_icon_delwords.png
+SHA1-Digest: flT71MhJxjawdku9MbEnIXIs8hU=
+
+Name: assets/tiled.png
+SHA1-Digest: mB89yqGj31BwsmtTDqNTyJd6tDE=
+
+Name: res/drawable/weibosdk_bg_delwords_nor.png
+SHA1-Digest: 0YbVOp6zRx/2VBfUaWc10ORZCGg=
+
+Name: assets/BG_Amb_5.ogg
+SHA1-Digest: ZGhQwdPolDEh4TFkWJh+xa+m0pM=
+
+Name: assets/rolling_godness.plist
+SHA1-Digest: hrXamAQHJBQAKOO1gBr1bITCheE=
+
+Name: res/drawable-mdpi/weibosdk_del_pic.png
+SHA1-Digest: MDUmqYQISxVyAZGhQTznYfOnVus=
+
+Name: assets/numberl.png
+SHA1-Digest: amzbWhIph40PA4XaQu4w8AuJf+k=
+
+Name: assets/se_popcat.ogg
+SHA1-Digest: 8K7G54v0KMEekgk35Jy40zDUGN0=
+
+Name: res/drawable-hdpi/icon_delwords.png
+SHA1-Digest: VyMwWiptUafoB1vPX49yg+3CLUo=
+
+Name: assets/fx_logo3.ogg
+SHA1-Digest: ThVgwBxoGHPB7l84j1wiaHi7Ke0=
+
+Name: res/drawable-xhdpi/icon_delwords.png
+SHA1-Digest: HPnToZm8+54NRh68LaRe69KMfhM=
+
+Name: assets/se_popsupercat.ogg
+SHA1-Digest: UiSOE89UMQUtYAOpzQhRMLVwDUE=
+
+Name: res/drawable-xhdpi/del_pic.png
+SHA1-Digest: FApt7CAVtM9Mj1m3ELjMilj99S4=
+
+Name: assets/act_text3.png
+SHA1-Digest: bwncVSbezxOezVCtS5gotGL7jQA=
+
+Name: assets/mailsup.png
+SHA1-Digest: OHktouCJ8F9KtW312Idw9e3rVec=
+
+Name: res/drawable-hdpi/close_press.png
+SHA1-Digest: CtyLpAYXuMRV4MI4iaPxocnm27g=
+
+Name: assets/BG_Amb_4.ogg
+SHA1-Digest: EoENbARD2EXV8jMdK2ZOfI+QDB0=
+
+Name: res/drawable-hdpi/weibosdk_bg_content.9.png
+SHA1-Digest: nydOITBCul+y379I23hhhyVLN2U=
+
+Name: assets/SetupLayer.plist
+SHA1-Digest: RvlbJI5YZ4YUosgiNFDpF4jC3WM=
+
+Name: assets/act_text2.png
+SHA1-Digest: oGkj5xZJO3BtcHix6sNyJMPi9JI=
+
+Name: assets/tilea4x4.plist
+SHA1-Digest: Jkw9swgVllgi6f6mNDSHnKZT3gU=
+
+Name: assets/se_group2.ogg
+SHA1-Digest: BhzqXzJGtzxJLXzK7sc5gdTPzxk=
+
+Name: assets/moregame.png
+SHA1-Digest: gvvZMJkvYonIV6YCWcZI+ameDVU=
+
+Name: assets/se_house.ogg
+SHA1-Digest: 0ii9tvQWiycY0YSvzEl/LHAXEmg=
+
+Name: assets/items.plist
+SHA1-Digest: gyvMotgKkyCOmicQQPePL5p2HOI=
+
+Name: res/drawable/weibosdk_close_selector.xml
+SHA1-Digest: 3xtZhF122ze46c51zira8o9oA3U=
+
+Name: assets/tiled.plist
+SHA1-Digest: kG4OTc904Nr5R3lsX9Z6qpLJD8c=
+
+Name: assets/payment.plist
+SHA1-Digest: Vuf/6H/siUNtfYeiP5Y1Dlj+gVw=
+
+Name: res/drawable-hdpi/close_normal.png
+SHA1-Digest: 5xwJoRE8mQmLavRonUJI/+iXzpE=
+
+Name: res/drawable-hdpi/dialog_bg.9.png
+SHA1-Digest: Ad12petGotvFGDMv5dN7ABptT+s=
+
+Name: assets/objecta.png
+SHA1-Digest: 3hvaWGc4I90lkHlN+j0hokdAcLw=
+
+Name: res/drawable/weibosdk_bg_delwords_sel.png
+SHA1-Digest: IqYjI5sISvrssokPlbIiuNsejls=
+
+Name: assets/tilec.png
+SHA1-Digest: wjeioskGANrFUSpPPP4Ny29Ylcc=
+
+Name: assets/se_faild.ogg
+SHA1-Digest: 08th0ftN1kit/NJaZDWJkHuYkKQ=
+
+Name: assets/TitlePack.png
+SHA1-Digest: wSsHBZ607O6tYNXI5xK75vPOpKI=
+
+Name: assets/se_charatalk2.ogg
+SHA1-Digest: WNOdjYTGWf0IYa64FdIePStcQBQ=
+
+Name: assets/Rookie.plist
+SHA1-Digest: 7VMo+vrCq6KqnBJWI8h1NU7/mPY=
+
+Name: assets/payment.png
+SHA1-Digest: K83MAqFaP2CY4n8Bv2NDucUbaNA=
+
+Name: assets/main_number2.png
+SHA1-Digest: W3FF+qN5aI80Cwg3VlW5jPLquyA=
+
+Name: assets/fx_rollinglight.ogg
+SHA1-Digest: 71WpfxLrOF649gMRE238LC4Jvss=
+
+Name: assets/se_click2.ogg
+SHA1-Digest: B6/chwuWW7anvZlFJHDZuKY4Wz4=
+
+Name: assets/modes.plist
+SHA1-Digest: NRizFkeGJWT4yZZP5jeGVYTlXUw=
+
+Name: res/drawable-mdpi/close_normal.png
+SHA1-Digest: LFxc/MNu5u1kHKVqc23aHQJLj38=
+
+Name: res/drawable-xhdpi/bg_delwords_nor.png
+SHA1-Digest: E/sSkbWAuJSUwXH35xK5syAON8I=
+
+Name: assets/act_bg.png
+SHA1-Digest: lvvvofYAxtNeK298YN0FXVD2xao=
+
+Name: assets/se_frutex.ogg
+SHA1-Digest: iO+hccgl+adFUX7pfuw6zGALzN8=
+
+Name: res/drawable-hdpi/del_pic.png
+SHA1-Digest: i87n+xMq/gyTlCHnbC0wKpUajY8=
+
+Name: assets/objecta.plist
+SHA1-Digest: hYmhSf8KrrcKNIZ/brcNhc5eab0=
+
+Name: assets/Rookie.png
+SHA1-Digest: 1U1s6iec4gkq9pUILKc5f3VWrPA=
+
+Name: res/drawable-xhdpi/ic_action_search.png
+SHA1-Digest: 2Dv/atE4KB/H5EExs07Vb210H7s=
+
+Name: res/drawable-hdpi/weibosdk_title_logo.png
+SHA1-Digest: uYoxsxmlkRpWgiGwQBA+F88cvCw=
+
+Name: res/drawable-xhdpi/weibosdk_close_press.png
+SHA1-Digest: SEs5RUDUQGg9bN8lWELzKrUIa80=
+
+Name: com/flurry/org/codehaus/jackson/impl/VERSION.txt
+SHA1-Digest: GNhBOI1gvPIkkxKcxxib21rjbVI=
+
+Name: assets/tilea4x4.png
+SHA1-Digest: 8ldeHujNxunnQlllnCzdCa7yMWY=
+
+Name: res/drawable-hdpi/weibosdk_close_normal.png
+SHA1-Digest: YJMy3wPJbIsjJu3eJZjinaRIFiY=
+
+Name: res/drawable-mdpi/weibosdk_image_background.9.png
+SHA1-Digest: OQdzwkX+DMfhCP5wPvqkqxy3XDo=
+
+Name: res/drawable-xhdpi/dialog_bg.9.png
+SHA1-Digest: Fbl9CLsS1/sG7WTPERjHzoddaps=
+
+Name: res/drawable-ldpi/ic_launcher.png
+SHA1-Digest: ONZojaDdCANHFmdXeIuSo1ggVNo=
+
+Name: assets/se_group1.ogg
+SHA1-Digest: PvFEl15WKS2vVN0OrItxy6DOSfU=
+
+Name: assets/storesscene_location.png
+SHA1-Digest: 4OWW0rPIlLV8lJbFi2Y04qPAp0U=
+
+Name: res/drawable-xhdpi/weibosdk_bg_title.9.png
+SHA1-Digest: 7oby+Lfmzzh0Z7+H0P+wRDfNfHc=
+
+Name: assets/act_button.png
+SHA1-Digest: HAzq0lY0Y3HH5yVUwaADuNiC2u8=
+
+Name: assets/GameScene_rolling.png
+SHA1-Digest: AT7f5SmBxdkv7KOQ4SFq5tB7eaY=
+
+Name: assets/TitlePack.plist
+SHA1-Digest: 5Yg8IWsxd0Es5RdFEwACHQ7ESLg=
+
+Name: res/drawable-xhdpi/close_press.png
+SHA1-Digest: 2weWDTT+qZa5BeJmIFmChUhX1cI=
+
+Name: res/drawable-hdpi/weibosdk_bg_title.9.png
+SHA1-Digest: sUkVsCmU2rznCxntF8wJvMrNzWg=
+
+Name: res/drawable/weibosdk_bg_delwords.xml
+SHA1-Digest: VBp6/ngW503b7uQMJ8S0iSkOgWU=
+
+Name: res/drawable-mdpi/weibosdk_close_press.png
+SHA1-Digest: JxiF9haDpc7pXs67PJHLOQZJO+s=
+
+Name: res/drawable-xhdpi/bg_delwords_sel.png
+SHA1-Digest: pU/V4pCUXf9dTBX78aFZ5ai+wac=
+
+Name: assets/bg_worldmap.png
+SHA1-Digest: SvFBqIQgvC2fSi9c/fApwcp4tTM=
+
+Name: res/drawable-xhdpi/weibosdk_close_normal.png
+SHA1-Digest: 3MjuVPjmg0a4Y99O5+bhGZcQVH4=
+
+Name: assets/SetupLayer.png
+SHA1-Digest: cqnXhiY69q/GJz5B+iaSJyEoR7w=
+
+Name: res/drawable/close_selector.xml
+SHA1-Digest: 1d2muAAvx1lwmRY/Fzgwek6oogk=
+
+Name: assets/main_number1.png
+SHA1-Digest: hY7luRBe5KjJxfYrEEQ5xqIPYpA=
+
+Name: res/drawable-hdpi/bg_btn.png
+SHA1-Digest: JuA5rJ2tBb+fKLciLOUTLUJEKPI=
+
+Name: assets/refreshUnit_cat.plist
+SHA1-Digest: nk7KTBmWacg3ZUhtcX4p3GRKCqU=
+
+Name: assets/se_click1.ogg
+SHA1-Digest: v2CpBmY+bDD+TmCVAkCgCAwxMOY=
+
+Name: res/drawable-xhdpi/close_normal.png
+SHA1-Digest: /hN9SXP6qTXdFsoabVVRPhupKN4=
+
+Name: assets/se_popboom.ogg
+SHA1-Digest: 5oFqyHOUjkENjsceZHT1kJo0Q7g=
+
+Name: res/drawable-hdpi/title_logo.png
+SHA1-Digest: phNIeFIPT9D3vD0W4OsAhs9bybg=
+
+Name: assets/TexturePack.plist
+SHA1-Digest: vN4GiTHX9SS0tXkfAZyJd1sRtq0=
+
+Name: assets/GameScene_godness.plist
+SHA1-Digest: v4kO+isxYCpLv6vewQ6U8W0vmvg=
+
+Name: assets/fx_enter.ogg
+SHA1-Digest: s4YExL7cuHQAOUCrP3z3YWAvZNU=
+
+Name: res/drawable-xhdpi/weibosdk_icon_delwords.png
+SHA1-Digest: GU4WaP8A/zAJ431kOYesREky67s=
+
+Name: assets/BG_Amb_1.ogg
+SHA1-Digest: VGf94ISGhJZJuiZmEe+ZBw71JUI=
+
+Name: res/drawable/weibosdk_bg_content.9.png
+SHA1-Digest: rknQuImDRq5cbalWLYb3dJkCl1A=
+
+Name: assets/BG_Amb_3.ogg
+SHA1-Digest: OpEIPw3T7xq6J+Tomn4FRrjjb2w=
+
+Name: res/drawable/weibosdk_image_background.9.png
+SHA1-Digest: fPVpfRdZZP4iykyoKA7HDxGFVuw=
+
+Name: assets/rolling_chest2.plist
+SHA1-Digest: 9+8MkBOPXWkvobOIo4Ga4o18syg=
+
+Name: assets/se_openchest.ogg
+SHA1-Digest: Yh3UTy4hXKVL940D/2DKPkAUqU0=
+
+Name: assets/se_catangry.ogg
+SHA1-Digest: PAnz81VBMwwYTPV+GZUk9GH2W0Q=
+
+Name: res/drawable/weibosdk_icon_delwords.png
+SHA1-Digest: 1BGOWzWXcN/6l3ss2e2xJqCQadw=
+
+Name: assets/FirstPurchase.png
+SHA1-Digest: 1bATc/VrxM55r3IqBcoMoHcj24k=
+
+Name: assets/fx_rolling.ogg
+SHA1-Digest: XMHlbMKNpX0RP8tlmQONrZEanb8=
+
+Name: assets/rolling_chest1.plist
+SHA1-Digest: PnlIV78TLc2RBhkgTpPJrTF/Lck=
+
+Name: res/drawable-hdpi/weibosdk_del_pic.png
+SHA1-Digest: /TKrfxiA6nhe8ZAO2wOnK6u6iAg=
+
+Name: assets/tileb.plist
+SHA1-Digest: Upf48KHEJVefnX/Et+0ryHfx8ug=
+
+Name: lib/armeabi/libgame.so
+SHA1-Digest: r0MzEokfd1VP8zLkdheCqSm2AcA=
+
+Name: assets/fx_logo1.ogg
+SHA1-Digest: ZALe1qNu3iZbpnzuChTocfQPgMY=
+
+Name: res/drawable-xhdpi/bg_content.9.png
+SHA1-Digest: R5qJRGAytNkXKLzoLOyVrYmkrHA=
+
+Name: res/drawable-hdpi/egame.png
+SHA1-Digest: 1e4PuLhSSUaZD9Elw7dHXKvJcCg=
+
+Name: res/drawable-hdpi/weibosdk_bg_delwords_nor.png
+SHA1-Digest: mTeneY61bYBaCS7vMSGhuAUH9l8=
+
+Name: assets/objectc.plist
+SHA1-Digest: 83dqvqylWy3D+upTwneDAML04j4=
+
+Name: assets/tileb.png
+SHA1-Digest: FXBwSm+b+5PteuWVXXSJVdL2+2w=
+
+Name: res/drawable-xhdpi/weibosdk_dialog_bg.9.png
+SHA1-Digest: Kh1vCwnsAjzUbxCNpGA0sitVlYM=
+
+Name: res/drawable-hdpi/ic_action_search.png
+SHA1-Digest: WvsoZfcfGbz7vtTCwzXLh3VcxFw=
+
+Name: assets/tilec.plist
+SHA1-Digest: pbzIjKFWQPUMOaVL9ypBqqj0Bhs=
+
+Name: assets/snow_iphone.plist
+SHA1-Digest: Awm6dTDfSGilbnnAl2+xdoPnZwM=
+
+Name: res/drawable-mdpi/weibosdk_close_normal.png
+SHA1-Digest: ZeRPSvB4UwBjoVYFXfdRu4INaLc=
+
+Name: assets/gift_1.png
+SHA1-Digest: vl806coZsj8doRuGhQE9/2Th2HA=
+
+Name: res/drawable-hdpi/ic_launcher.png
+SHA1-Digest: sYVbip6yUsp2HF5zTYFTC/MHjCU=
+
+Name: res/drawable-xhdpi/weibosdk_title_logo.png
+SHA1-Digest: A9qh0ggD+10m1B0/eRPF9z8HX1Y=
+
+Name: resources.arsc
+SHA1-Digest: UvjBNYme/T3It+Sp7L2MgCpgX+g=
+
+Name: assets/se_cataction.ogg
+SHA1-Digest: k/MkQ7umelNdXZaBcXO3kGu79uM=
+
+Name: assets/objectb.plist
+SHA1-Digest: RAvg2eq3PQMXVWBaLpTeRu4f5kY=
+
+Name: assets/bg.png
+SHA1-Digest: Pt2TzvRKfzZnB8+MiI867gRLF/g=
+
+Name: assets/se_chest.ogg
+SHA1-Digest: mKdjIBVwqV2Z1NN5Pc5uj0qfKsw=
+
+Name: AndroidManifest.xml
+SHA1-Digest: xv2Q+vLv3TQH605J6CEi1LSWSF4=
+
+Name: res/drawable-hdpi/weibosdk_close_press.png
+SHA1-Digest: 1KjX62li8yLjnSxPaN98l9fGvuY=
+
+Name: assets/se_buyitem.ogg
+SHA1-Digest: yTu1aSwExOxLsXK3SBF85JOuaoU=
+
+Name: assets/se_catnt.ogg
+SHA1-Digest: aF1I92DKhmLMozGDvXWQyd+iefg=
+
+Name: assets/se_drop.ogg
+SHA1-Digest: hTirawjTFPgDs0cCr2SkK4Bxisc=
+
+Name: res/drawable-hdpi/weibosdk_bg_btn.png
+SHA1-Digest: 6CBvgnxLxYjmXYJRcSnX8DI7rOY=
+
+Name: assets/FirstPurchase.plist
+SHA1-Digest: wyqPLGZQxVoySlclgb/96CaKoiA=
+
+Name: res/drawable-hdpi/bg_title.9.png
+SHA1-Digest: VMG/Ok51CDwYBEPj2ihHVJkqM/8=
+
+Name: res/drawable-mdpi/close_press.png
+SHA1-Digest: H21uHrLX7F6hlX1P0nBx86n9yHU=
+
+Name: assets/setup.png
+SHA1-Digest: aO6cgK3U+Ss0QGN62wPo3AGEaQE=
+
+Name: assets/refreshUnit.plist
+SHA1-Digest: Cfn7f5773FriYKPpjTHodmO/ucE=
+
+Name: assets/tilea.plist
+SHA1-Digest: /twaNitfZ+UtoBsUgAmQ8aWY7v0=
+
+Name: assets/stringtips.plist
+SHA1-Digest: XcfDREYkqcS8MbwqjRqG/yPybVc=
+
+Name: res/drawable-mdpi/weibosdk_title_logo.png
+SHA1-Digest: DXZqxXRwTDd8OxIpmXqtRJu2f4k=
+
+Name: classes.dex
+SHA1-Digest: 6OxNIFj24xZksUKuAS6MMPRPYAs=
+
+Name: assets/se_charascream1.ogg
+SHA1-Digest: Ip8+sXDxwjYgWMSJuWOTNh1KbF8=
+
+Name: assets/se_charascream2.ogg
+SHA1-Digest: YHakew3ZtrEBt1yRq3xG7j6zfzs=
+
+Name: assets/title_score.png
+SHA1-Digest: SMbIPctow6RyzqQCpHrli4S8UOk=
+
+Name: res/drawable-xhdpi/ic_launcher.png
+SHA1-Digest: O0BmU7DqYJqAhSfij5LMIVjreTc=
+
+Name: assets/WorldScene.png
+SHA1-Digest: 7T/znc7QGkkxxjmhGgThAMD4KEM=
+
+Name: res/drawable-mdpi/ic_action_search.png
+SHA1-Digest: jAGFiT7RUDOYcmBQqk2FP01Xtb0=
+
+Name: assets/rain_iphone.plist
+SHA1-Digest: GH9Z1NLyHdguFO1rDHHq6WAzeYQ=
+
+Name: assets/se_screenshot.ogg
+SHA1-Digest: 2p+tDitE3htF5lcANz6N919I4vQ=
+
+Name: assets/se_dropdepot.ogg
+SHA1-Digest: B3JySFJuotWG3srzmcuoMXDxPjo=
+
+Name: res/drawable/weibosdk_bg_title.9.png
+SHA1-Digest: KgGcJwUC01vi1dsEydBrhepgVZc=
+
+Name: assets/se_gameover.ogg
+SHA1-Digest: kcvOT1oPdBO8dqP8bp7wnrVfhso=
+
+Name: res/drawable-xhdpi/weibosdk_bg_delwords_sel.png
+SHA1-Digest: 8mU2PMSJddo5GTrd9r2o4MN3R1s=
+
+Name: assets/se_popstar.ogg
+SHA1-Digest: wXWABtTo/n20mtE1qu7L1OQ6FOE=
+
+Name: assets/objectb.png
+SHA1-Digest: SfT1x2x0vwKGxlKco+hS6zn+7r4=
+
+Name: assets/se_group3.ogg
+SHA1-Digest: ULGcjCa9EmH4Lf0iYSTm9FE9kMY=
+
+Name: res/drawable-mdpi/title_logo.png
+SHA1-Digest: QR4dsOtikIffOX5sCGn5FkWNnGQ=
+
+Name: res/drawable-xhdpi/weibosdk_bg_btn.png
+SHA1-Digest: SSaBdWiwQy8T5puCR8RFoEszseM=
+
+Name: assets/AboutLayer.plist
+SHA1-Digest: cvNzYGc+M0DTSeVArdeB3+7kz+4=
+
+Name: com/flurry/org/apache/avro/data/Json.avsc
+SHA1-Digest: vz8vwKbJ6Up72alo7rovlQWLvoE=
+
+Name: res/drawable-xhdpi/bg_title.9.png
+SHA1-Digest: U3sXT+AUXR4Mhka2rmVaeRM0Ovw=
+
+Name: res/drawable-mdpi/image_background.9.png
+SHA1-Digest: nw7SuCZl0flm/BGd4GM4W2tsCVo=
+
+Name: assets/fx_unlock.ogg
+SHA1-Digest: 1edj3Iz6z8N57q/nl2AGWTwKXd4=
+
+Name: assets/objectd.png
+SHA1-Digest: I+UgbDJkzdt9zvyRe6eeVHhF1yo=
+
+Name: res/drawable/weibosdk_bg_btn.png
+SHA1-Digest: gLdI/FGss09B7po/L8BQ5phM4r0=
+
+Name: assets/blank.png
+SHA1-Digest: +56ysHXAIvgdH1vN4MfQNFpxtJQ=
+
+Name: res/layout/edit_payload.xml
+SHA1-Digest: 1PhmsnzD7QOEGlWCp+DrvOKJi2o=
+
+Name: assets/se_tree.ogg
+SHA1-Digest: QmDmIUSPUKM7PJnz0CtriAUAU7A=
+
+Name: assets/service.png
+SHA1-Digest: hB01nuZOd8nrjm4zPy+HTGkhYuk=
+
+Name: assets/formule.png
+SHA1-Digest: pLD4nFFELdwLsbZIk4TRpM6cr0I=
+
+Name: res/drawable-hdpi/weibosdk_dialog_bg.9.png
+SHA1-Digest: 6TMUWkyxq7/FBuWI9JFgRD+UBdM=
+
+Name: assets/WorldScene.plist
+SHA1-Digest: Ib6rjv7LtaDg/4U2JR+uG8tYPec=
+
+Name: assets/TexturePack.png
+SHA1-Digest: +UZWyrcge2kuV7XV2lqTJQsJnqM=
+
+Name: assets/objectc.png
+SHA1-Digest: KUa6sHNQ8s7nDBiKWKu+YrTuCvA=
+
+Name: res/drawable-hdpi/bg_content.9.png
+SHA1-Digest: n3bcKM/zoG7CDEDBrgFHLUUNjEw=
+
+Name: res/drawable/bg_delwords.xml
+SHA1-Digest: pdN2OCDRUxbM0PKq9QGYlmOP9FM=
+
+Name: assets/BG_Amb_2.ogg
+SHA1-Digest: HjjzUPe0WjUAIl2V9x5pbtMp1oU=
+
+Name: res/drawable/weibosdk_del_pic.png
+SHA1-Digest: gHH3Nb+BpmOtox+/SZl80gpg5mc=
+
+Name: res/drawable-mdpi/del_pic.png
+SHA1-Digest: y6rtxiKNJlBeKu7Ub+VIxukWDE8=
+
+Name: assets/AboutLayer.png
+SHA1-Digest: qYHYPgBT6AJyUUImeC0vhDFdSN0=
+
+Name: lib/armeabi/gdbserver
+SHA1-Digest: 1aT+hwSDFEMkBcImW+EVK5cClxo=
+
+Name: assets/randomChessboard.plist
+SHA1-Digest: N2StSns55MC10XJlpAT4AZG/ZJ8=
+
+Name: res/drawable-xhdpi/weibosdk_del_pic.png
+SHA1-Digest: KflRstEzLHURHTl4zx0J1toRehc=
+
+Name: assets/star.png
+SHA1-Digest: n1tgIcNput3LwTI84Z70zBSIy5c=
+
+Name: assets/over_iconaddnumber.png
+SHA1-Digest: em+kivhbjMVP2fE/CRZ1MgXTzmw=
+
+Name: res/drawable-xhdpi/weibosdk_bg_content.9.png
+SHA1-Digest: mhjTR9bbffMsw1zlqD7LLryJFNI=
+
+Name: assets/refreshUnit_nocat.plist
+SHA1-Digest: GAamKQWMXMDdNlQNinbahJ0puOQ=
+
+Name: res/drawable-mdpi/ic_launcher.png
+SHA1-Digest: oi2iZ8zYUbXOGs2n9fXfmzfxt90=
+
+Name: res/drawable-hdpi/bg_delwords_sel.png
+SHA1-Digest: Cuk3im6xV0CDW4UVuZgGsdTBxy0=
+

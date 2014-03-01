@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>1</key>
+	<array>
+		<string>光荣与希望开始的地方。现在只是不起眼的小村庄。</string>
+		<string>基础模式</string>
+		<string>初始解锁</string>
+		<string>{56,184}</string>
+	</array>
+	<key>2</key>
+	<array>
+		<string>海岸村庄，土地面积有限，于是大力发展仓储业吧。</string>
+		<string>双仓库，发展空间受限</string>
+		<string>达到600,000分解锁</string>
+		<string>{154,139}</string>
+	</array>
+	<key>3</key>
+	<array>
+		<string>寸土寸金，海上的小岛也要开发成旅游胜地哟～</string>
+		<string>发展空间极度受限，无飞天猫</string>
+		<string>达到1,000,000分解锁</string>
+		<string>{258,156}</string>
+	</array>
+	<key>4</key>
+	<array>
+		<string>暖洋洋的喵喵村，只有养猫达人才能治理好的地方。</string>
+		<string>巨猫和飞天猫出现几率增大</string>
+		<string>一次搞定10只巨猫后解锁</string>
+		<string>{84,300}</string>
+	</array>
+	<key>5</key>
+	<array>
+		<string>古老相传，月湖里有位女神，祭祀她可以得到祝福。</string>
+		<string>中心有湖，发展空间受限</string>
+		<string>达到300,000分解锁</string>
+		<string>{264,264}</string>
+	</array>
+	<key>6</key>
+	<array>
+		<string>物产丰富的地方，商店里可以买到新鲜的东西呢～</string>
+		<string>高级商店模式</string>
+		<string>买光小草、灌木和大树解锁</string>
+		<string>{180,336}</string>
+	</array>
+	<key>7</key>
+	<array>
+		<string>顶尖大师们聚集在这里，所以，他们不需要仓库～</string>
+		<string>没有仓库</string>
+		<string>达到100,000分解锁</string>
+		<string>{60,420}</string>
+	</array>
+	<key>8</key>
+	<array>
+		<string>寒冷的地方，猫猫们都去冬眠了。适合新手发展。</string>
+		<string>无猫模式，较低奖励，不能解锁</string>
+		<string>不到20,000分就挂的请进</string>
+		<string>{256,426}</string>
+	</array>
+</dict>
+</plist>
