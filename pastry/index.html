@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:wb="http://open.weibo.com/wb">
+<head>
+    <meta charset="utf-8">
+    <!--<meta name="apple-mobile-web-app-capable" content="yes" />-->
+    <meta name="viewport" content="height=640,user-scalable=no">
+    <!--<meta name=”viewport” content=”width=device-width, initial-scale=1, maximum-scale=1″>-->
+    <!--<meta name="viewport" content="width=540,maximum-scale=1,user-scalable=no"/>-->
+    <!--<meta name="viewport" content="height=720,maximum-scale=1,user-scalable=no"/>-->
+    <title>cakeandcake</title>
+    <link rel="stylesheet" href="css/cakecake.css" />
+</head>
+<body>
+<!--<div id="container">-->
+    <!--<canvas id="gameBg" width="640" height="1136">-->
+        <!--Sorry, your web browser does not support canvas content.-->
+    <!--</canvas>-->
+    <!--<canvas id="gameBg2" width="640" height="1136">-->
+        <!--Sorry, your web browser does not support canvas content.-->
+    <!--</canvas>-->
+	<!--<canvas id="game" width="640" height="1136">-->
+		<!--Sorry, your web browser does not support canvas content.-->
+	<!--</canvas>-->
+    <!--<canvas id="gameAnimation" width="640" height="1136">-->
+        <!--Sorry, your web browser does not support canvas content.-->
+    <!--</canvas>-->
+    <!--<canvas id="gameUi" width="640" height="1136">-->
+        <!--Sorry, your web browser does not support canvas content.-->
+    <!--</canvas>-->
+<!--<canvas id="gameBg">-->
+    <!--Sorry, your web browser does not support canvas content.-->
+<!--</canvas>-->
+<!--<canvas id="gameBg2">-->
+    <!--Sorry, your web browser does not support canvas content.-->
+<!--</canvas>-->
+<!--<canvas id="game">-->
+    <!--Sorry, your web browser does not support canvas content.-->
+<!--</canvas>-->
+<canvas id="gameAnimation">
+    Sorry, your web browser does not support canvas content.
+</canvas>
+<!--<canvas id="gameUi">-->
+    <!--Sorry, your web browser does not support canvas content.-->
+<!--</canvas>-->
+<!--</div>-->
+<script type="text/javascript" src="js/cakecake/util.js"></script>
+
+<!--<script type="text/javascript" src="js/Extensions/json2.js"></script>-->
+<script type="text/javascript" src="js/Extensions/CocoonJSExtensions/CocoonJS.js"></script>
+<script type="text/javascript" src="js/Extensions/CocoonJSExtensions/CocoonJS_App.js"></script>
+<!--<script type="text/javascript" src="js/Extensions/CocoonJSExtensions/CocoonJS_App_ForWebView.js"></script>-->
+<script type="text/javascript" src="js/Extensions/CocoonJSExtensions/CocoonJS_App_ForCocoonJS.js"></script>
+<!--<script type="text/javascript" src="js/Extensions/CocoonJSExtensions/CocoonJS_Ad.js"></script>-->
+<script type="text/javascript" src="js/Extensions/CocoonJSExtensions/CocoonJS_Social.js"></script>
+<script type="text/javascript" src="js/Extensions/CocoonJSExtensions/CocoonJS_Social_Facebook.js"></script>
+<script type="text/javascript" src="js/Extensions/CocoonJSExtensions/CocoonJS_Social_GameCenter.js"></script>
+<script type="text/javascript" src="js/Extensions/CocoonJSExtensions/CocoonJS_Store.js"></script>
+<!--<script type="text/javascript" src="js/Extensions/CocoonJSExtensions/CocoonJS_SocialGaming.js"></script>-->
+<!--<script type="text/javascript" src="js/Extensions/CocoonJSExtensions/CocoonJS_SocialGamingManager.js"></script>-->
+<!--<script type="text/javascript" src="js/Extensions/CocoonJSExtensions/CocoonJS_SocialGaming_Facebook.js"></script>-->
+<!--<script type="text/javascript" src="js/Extensions/CocoonJSExtensions/CocoonJS_SocialGaming_GameCenter.js"></script>-->
+<script type="text/javascript" src="js/RenderEngine/HitPoint.js"></script>
+<script type="text/javascript" src="js/RenderEngine/LGeometry.js"></script>
+<script type="text/javascript" src="js/RenderEngine/LSprite.js"></script>
+<script type="text/javascript" src="js/RenderEngine/LTimer.js"></script>
+<script type="text/javascript" src="js/RenderEngine/LGlobal.js"></script>
+<script type="text/javascript" src="js/RenderEngine/LLoader.js"></script>
+<script type="text/javascript" src="js/RenderEngine/LEvent.js"></script>
+<script type="text/javascript" src="js/RenderEngine/LMouseEvent.js"></script>
+<script type="text/javascript" src="js/RenderEngine/LTouchEvent.js"></script>
+<script type="text/javascript" src="js/RenderEngine/LLoader.js"></script>
+<script type="text/javascript" src="js/RenderEngine/LTextField.js"></script>
+<script type="text/javascript" src="js/RenderEngine/LTweenLite.js"></script>
+<script type="text/javascript" src="js/RenderEngine/LBitmap.js"></script>
+<script type="text/javascript" src="js/RenderEngine/L9ScaleBitmap.js"></script>
+<script type="text/javascript" src="js/RenderEngine/LGraphics.js"></script>
+<script type="text/javascript" src="js/RenderEngine/LBitmapData.js"></script>
+<script type="text/javascript" src="js/RenderEngine/LAnimation.js"></script>
+<script type="text/javascript" src="js/RenderEngine/LButton.js"></script>
+<script type="text/javascript" src="js/RenderEngine/LSound.js"></script>
+<script type="text/javascript" src="js/RenderEngine/LSetterTextField.js"></script>
+
+
+<script type="text/javascript" src="assets/language/string_English.js"></script>
+<script type="text/javascript" src="assets/language/string_Chinese.js"></script>
+<script type="text/javascript" src="assets/language/string_Spanish.js"></script>
+<script type="text/javascript" src="assets/language/string_French.js"></script>
+<script type="text/javascript" src="js/cakecake/assist/switchLanguage.js"></script>
+
+<script type="text/javascript" src="js/cakecake/data/assets/gameConfig.js"></script>
+<script type="text/javascript" src="js/cakecake/assist/social/store.js"></script>
+<script type="text/javascript" src="js/cakecake/assist/social/facebook.js"></script>
+<script type="text/javascript" src="js/cakecake/assist/social/gameCenter.js"></script>
+<script type="text/javascript" src="js/cakecake/assist/social/achievement.js"></script>
+<script type="text/javascript" src="js/cakecake/assist/timeCountDown.js"></script>
+<script type="text/javascript" src="js/cakecake/data/userProfile.js"></script>
+<script type="text/javascript" src="js/cakecake/data/assets/imageAssets2.js"></script>
+<script type="text/javascript" src="js/cakecake/data/assets/imageAssets.js"></script>
+<script type="text/javascript" src="js/cakecake/data/assets/assetsData.js"></script>
+<script type="text/javascript" src="js/cakecake/assist/sound/soundManager.js"></script>
+
+<script type="text/javascript" src="js/cakecake/view/panel/CommonSubPanel.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/AssistantPanel.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/LoadingPanel.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/AchievementPanel.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/DailyRewardPanel.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/LeaderBoardPanel.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/ResultPanel.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/OverPanel.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/PausePanel.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/StorePanel.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/SocialPanel.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/AchievementPanelInMode.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/BackgroundMask.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/SettingPanel.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/AboutPanel.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/LanguagePanel.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/HelpPanel.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/ResetPanel.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/ModePanel.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/ConfirmPanel.js"></script>
+
+<script type="text/javascript" src="js/cakecake/view/panel/list/ProductItemRender.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/list/CakeItemRender.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/list/SpecialItemRender.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/list/CoinsItemRender.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/list/SocialItem.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/list/RankingItem.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/list/AssistantItem.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/list/List.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/list/AssistantList.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/list/ItemsContainer.js"></script>
+
+<script type="text/javascript" src="js/cakecake/view/panel/component/ModeBtn.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/component/BaseAchievementItem.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/component/AchievementItemOpening.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/component/ShopButton.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/component/CoinInfoComponent.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/component/DailyCake.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/component/StorePageTitle.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/component/PageBtnLeft.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/component/PageBtnRight.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/component/PageNumberPoint.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/component/PageNumber.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/component/CountDown.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/component/GoalsBar.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/component/ResultScore.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/component/ModeIcon.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/component/ResultHighestObject.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/component/TutorialDialogBox.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/component/ModeTipDialogBox.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/component/LockTipDialogBox.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/component/DialogTip.js"></script>
+<script type="text/javascript" src="js/cakecake/view/panel/component/VolumeButton.js"></script>
+
+<script type="text/javascript" src="js/cakecake/model/GridContainer.js"></script>
+<script type="text/javascript" src="js/cakecake/model/Animal.js"></script>
+<script type="text/javascript" src="js/cakecake/model/Plant.js"></script>
+
+<script type="text/javascript" src="js/cakecake/interactive/mouseHandler.js"></script>
+<script type="text/javascript" src="js/cakecake/interactive/onDestructionCell.js"></script>
+<script type="text/javascript" src="js/cakecake/interactive/Interactive.js"></script>
+<script type="text/javascript" src="js/cakecake/interactive/onStorageCell.js"></script>
+<script type="text/javascript" src="js/cakecake/interactive/onCoins.js"></script>
+<script type="text/javascript" src="js/cakecake/interactive/processAnimal.js"></script>
+<script type="text/javascript" src="js/cakecake/interactive/processGloves.js"></script>
+<script type="text/javascript" src="js/cakecake/interactive/processPlant.js"></script>
+<script type="text/javascript" src="js/cakecake/interactive/useUniversal.js"></script>
+
+
+<script type="text/javascript" src="js/cakecake/inGame/gameTools/gameTools.js"></script>
+
+<script type="text/javascript" src="js/cakecake/inGame/ai.js"></script>
+<script type="text/javascript" src="js/cakecake/inGame/aiAnimal.js"></script>
+<script type="text/javascript" src="js/cakecake/inGame/map.js"></script>
+<script type="text/javascript" src="js/cakecake/inGame/AssistantHandler.js"></script>
+<script type="text/javascript" src="js/cakecake/view/viewComponent/TimeLine.js"></script>
+
+<script type="text/javascript" src="js/cakecake/view/gameUI.js"></script>
+<script type="text/javascript" src="js/cakecake/inGame/setOwnBg.js"></script>
+<script type="text/javascript" src="js/cakecake/view/visibleManager.js"></script>
+
+<script type="text/javascript" src="js/cakecake/inGame/gameController/runtimeData.js"></script>
+<script type="text/javascript" src="js/cakecake/inGame/gameController/gameOver.js"></script>
+<script type="text/javascript" src="js/cakecake/inGame/gameController/RandomAnimationOfCake.js"></script>
+<script type="text/javascript" src="js/cakecake/inGame/gameController/startGameByMode.js"></script>
+<script type="text/javascript" src="js/cakecake/inGame/gameController/TTCountDown.js"></script>
+
+<script type="text/javascript" src="js/cakecake/assist/tutorial/tutorialManager.js"></script>
+
+<script type="text/javascript" src="js/cakecake/assist/assistForStore.js"></script>
+<script src="js/cakecake/main.js"></script>
+<!--<script type="text/javascript" src="http://192.168.1.5:8080/target/target-script-min.js#anonymous"></script>-->
+</body>
+</html>

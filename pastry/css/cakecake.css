@@ -1,0 +1,30 @@
+#gameBg{
+    position: absolute;
+    margin: 0 auto;
+}
+#gameBg2{
+    position: absolute;
+    margin: 0 auto;
+}
+#game{
+	position: absolute;
+    margin: 0 auto;
+}
+#gameAnimation{
+    position: absolute;
+    margin: 0 auto;
+}
+#gameUi{
+    position: absolute;
+    margin: 0 auto;
+}
+
+#container{
+    position:relative;
+    width: 640px;
+    height: 1136px;
+    margin: 0 auto;
+}
+body{
+    margin: 0 auto;
+}
