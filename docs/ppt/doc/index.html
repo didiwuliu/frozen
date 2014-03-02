@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>frozen</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=1024" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="description" content="frozen 冰雪奇缘 impress.js html5 node websocket" />
+		<meta name="author" content="Chunsheng Zhang" />
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+		<link href="../css/impress-demo.css" rel="stylesheet" />
+		<link rel="shortcut icon" href="../bluefish.png" />
+		<link rel="apple-touch-icon" href="../bluefish.png" />
+	</head>
+	<body class="impress-not-supported">
+		<div id="impress">
+			<div id="bored" class="step slide" data-x="-1000" data-y="-1500">
+				<h1 style="text-align:center;background-color:#C0C0C0;height:100px;font-size:60px;line-height:100px">frozen</h1>
+				<div style="position:absolute;left:300px;top:200px">
+					<ul>
+						<li>团队名称：畅想未来</li>
+						<br />
+						<li>成员：谢雪勇 张春生</li>
+					</ul>
+				</div>
+				<div style="position:relative;top:400px;text-align:center;font-size:20px">
+					<img src="../lazu_org.gif"></img>悼念无辜殒命的同胞。愿逝者安息，伤者平安。谴责暴力！严惩凶手！我们与春城昆明在一起！
+				</div>
+			</div>
+			<div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
+				<p>
+					这是一款类似于求合体的消除类游戏，游戏排名在服务器端计算，类似于《天天爱消除》，美术风格想做成《冰雪奇缘》的感觉，因此命名《Frozen》
+				</p>
+			</div>
+			<div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+				<span>架构</span>
+				<div>
+					<ul>
+						<li>前端：html5+css3</li>
+						<li>后端：avos cloud</li>
+					</ul>
+					<img src="../architecture.jpg">
+				</div>
+			</div>
+			<div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+				<p>
+					运行环境<br/>
+					safari、chrome、android、iOS等
+				</p>
+			</div>
+			<div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+				<p>
+					好友互动<br />
+					多人游戏
+				</p>
+			</div>
+			<div id="thanks" class="step" data-x="4000" data-y="-300" data-scale="6">
+				<p>
+					谢谢!
+				</p>
+			</div>
+		</div>
+		<div class="hint">
+			<p>使用方向键浏览</p>
+		</div>
+		<script>
+			if ("ontouchstart" in document.documentElement) { 
+				document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+			}
+		</script>
+		<script src="../js/impress.js"></script>
+		<script>impress().init();</script>
+	</body>
+</html>
