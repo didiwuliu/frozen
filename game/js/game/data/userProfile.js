@@ -140,6 +140,14 @@ this.userProfile.originalAchievement = {
                 userInfo.gameResultLog["mode"+i].pop();
             }
         }
+		var UserInfoObject = AV.Object.extend("UserInfoObject");
+		var userInfoObject = new UserInfoObject();
+		console.log(userInfo);
+		userInfoObject.save(userInfo, {
+			success: function(object) {
+				
+			}
+		});
 
         localStorage.setItem("userInfo.gameResultLog",JSON.stringify(userInfo.gameResultLog));
     }

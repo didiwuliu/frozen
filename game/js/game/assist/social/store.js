@@ -329,7 +329,7 @@ this.store = this.store || {};
 
     setTimeout(function()
     {
-        store.start();
+        //store.start();
     }, 60000);
 //    LTimer.waitToDo(60,store.start);
 //    this.store.start();

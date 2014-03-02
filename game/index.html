@@ -11,6 +11,18 @@
 		<canvas id="gameAnimation">
 			Sorry, your web browser does not support canvas content.
 		</canvas>
+		<script type="text/javascript" src="https://cn.avoscloud.com/scripts/lib/av-0.3.1.min.js"></script>
+		<script type="text/javascript">
+			AV.initialize("rlf3sl5oycteyp8a7x1qclzi1pphctaw7i2iw03w1dpahl6p", "53iry122fqw69t8n6rzvnxbwggzzbllp0hxsazmikmyez0if");
+			var TestObject = AV.Object.extend("TestObject");
+			var testObject = new TestObject();
+			testObject.save({foo: "bar"}, {
+				success: function(object) {
+					
+				}
+			});
+
+		</script>
 		<script type="text/javascript" src="js/game/util.js"></script>
 
 		<script type="text/javascript" src="js/Extensions/CocoonJSExtensions/CocoonJS.js"></script>
