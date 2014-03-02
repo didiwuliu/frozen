@@ -24,6 +24,7 @@ this.switchLanguage = this.switchLanguage ||{};
         }else{
             national = "English";
         }
+		national = "English";
     }
     this.switchLanguage.currentLanguage = national;
     string.currentString =  string["s_"+national];
